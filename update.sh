@@ -3,6 +3,8 @@
 # Copyright (C) 2015 by Mingjie Li, <limingjie@outlook.com>
 # https://github.com/limingjie/dotfiles
 
+scriptpath=${0:a:h}
+
 function update() {
   if [ -f $1 ]; then
     if [ ! -d $2 ]; then
@@ -17,14 +19,14 @@ function update() {
 echo "start updating..."
 
 # update .zshrc
-update ~/.zshrc zsh
+update ~/.zshrc ${scriptpath}/zsh
 
 # update config.fish
-update ~/.config/fish/config.fish fish
+update ~/.config/fish/config.fish ${scriptpath}/fish
 
 # update .tmux.conf
-update ~/.tmux.conf tmux
+update ~/.tmux.conf ${scriptpath}/tmux
 
 # update .vimrc
-update ~/.vimrc vim
+update ~/.vimrc ${scriptpath}/vim
 

@@ -3,6 +3,8 @@
 # Copyright (C) 2015 by Mingjie Li, <limingjie@outlook.com>
 # https://github.com/limingjie/dotfiles
 
+scriptpath=${0:a:h}
+
 function install() {
   if [ -f $1 ]; then
     if [ -d $2 ]; then
@@ -15,14 +17,14 @@ function install() {
 echo "Start installation..."
 
 # update .zshrc
-install zsh/.zshrc ~/
+install ${scriptpath}/zsh/.zshrc ~/
 
 # update config.fish
-install fish/config.fish ~/.config/fish/
+install ${scriptpath}/fish/config.fish ~/.config/fish/
 
 # update .tmux.conf
-install tmux/.tmux.conf ~/
+install ${scriptpath}/tmux/.tmux.conf ~/
 
 # update .vimrc
-install vim/.vimrc ~/
+install ${scriptpath}/vim/.vimrc ~/
 
