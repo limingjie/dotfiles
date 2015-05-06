@@ -1,4 +1,5 @@
 # PuTTY Configuration and Color Scheme
 
 - glacier
-![glacier](/glacier.png)
+
+![glacier](/putty/glacier.png)
