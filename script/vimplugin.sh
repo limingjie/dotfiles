@@ -17,7 +17,7 @@ function install_update_plugin() {
     cd ..
   else
     echo "Installing plugin $2..."
-    git clone $3
+    git clone --depth=1 $3
   fi
 }
 
