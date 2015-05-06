@@ -1,7 +1,20 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 # Update dotfiles to repository
 # Copyright (C) 2015 by Mingjie Li, <limingjie@outlook.com>
 # https://github.com/limingjie/dotfiles
+
+function update() {
+  if [ -f $1 ]; then
+    if [ ! -d $2 ]; then
+      mkdir -p $2
+    fi
+
+    cp $1 $2
+    echo "Updated" $1 "to" $2.
+  fi
+}
+
+echo "start updating..."
 
 # update .zshrc
 update ~/.zshrc zsh
@@ -15,16 +28,3 @@ update ~/.tmux.conf tmux
 # update .vimrc
 update ~/.vimrc vim
 
-function update() {
-  local filename = $1
-  local path = $2
-
-  if [ -f $filename ]; then
-    if [ ! -d $path ]; then
-      mkdir -p $path
-    fi
-
-    cp $filename $path
-    echo "Copied" $filename "to" $path.
-  fi
-}

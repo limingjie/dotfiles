@@ -1,7 +1,18 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 # Install dotfiles
 # Copyright (C) 2015 by Mingjie Li, <limingjie@outlook.com>
 # https://github.com/limingjie/dotfiles
+
+function install() {
+  if [ -f $1 ]; then
+    if [ -d $2 ]; then
+      cp $1 $2
+      echo "Installed" $1 "to" $2
+    fi
+  fi
+}
+
+echo "Start installation..."
 
 # update .zshrc
 install zsh/.zshrc ~/
@@ -15,14 +26,3 @@ install tmux/.tmux.conf ~/
 # update .vimrc
 install vim/.vimrc ~/
 
-function install() {
-  local filename = $1
-  local path = $2
-
-  if [ -f $filename ]; then
-    if [ -d $path ]; then
-      cp $filename $path
-      echo "Copied" $filename "to" $path.
-    fi
-  fi
-}
