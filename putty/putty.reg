@@ -1,12 +1,12 @@
 Windows Registry Editor Version 5.00
 
-; ------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------
 ; PuTTY Configuration
 ;
 ; Author: Mingjie Li
 ; Email : limingjie@outlook.com
 ; Github: https://github.com/limingjie/dotfiles
-; ------------------------------------------------------------------------------
+;-------------------------------------------------------------------------------
 
 ; change session name
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\session_name]
@@ -17,7 +17,7 @@ Windows Registry Editor Version 5.00
 ; utf-8
 "LineCodePage"="UTF-8"
 
-; lines of scrollback
+; 65535 lines of scrollback
 "ScrollbackLines"=dword:0000ffff
 
 ; terminal size 160x45
