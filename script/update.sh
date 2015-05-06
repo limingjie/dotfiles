@@ -29,4 +29,3 @@ update ~/.tmux.conf ${scriptpath}/tmux
 
 # update .vimrc
 update ~/.vimrc ${scriptpath}/vim
-

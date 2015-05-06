@@ -5,7 +5,7 @@
 
 scriptpath=${0:a:h}
 
-function install_upgrade_ohmyzsh() {
+function install_ohmyzsh() {
   if [[ ! -d ~/.oh-my-zsh ]]; then
     echo "Installing oh-my-zsh..."
     curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -23,7 +23,8 @@ function install_dotfile() {
 
 echo "Start installation..."
 
-install_upgrade_ohmyzsh
+# install oh-my-zsh
+install_ohmyzsh
 
 # update .zshrc
 install_dotfile ${scriptpath}/../zsh/.zshrc ~/
@@ -39,4 +40,3 @@ ${scriptpath}/vimplugin.sh
 
 # update .vimrc
 install_dotfile ${scriptpath}/../vim/.vimrc ~/
-

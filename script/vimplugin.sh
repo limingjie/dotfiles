@@ -31,6 +31,8 @@ function install_plugins() {
   vim -u NONE -c "helptags vim-fugitive/doc" -c q
 }
 
+# install vim plug-in manager
 install_pathogen
-install_plugins
 
+# install vim themes and plug-ins
+install_plugins
