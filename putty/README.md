@@ -21,13 +21,17 @@
 
 ## PuTTY Color Schemes
 
+- solarized dark (https://github.com/altercation/solarized)
+
+  ![solarized dark](/putty/screenshots/solarized_dark.png)
+
 - glacier (https://github.com/primedirective/Glacier-Remixes)
 
-  ![glacier](/putty/glacier.png)
+  ![glacier](/putty/screenshots/glacier.png)
 
 - zenburn (https://github.com/voieducode/putty-colors-zenburn)
 
-  ![zenburn](/putty/zenburn.png)
+  ![zenburn](/putty/screenshots/zenburn.png)
 
 ## Create Your Own PuTTY Color Schemes
 
