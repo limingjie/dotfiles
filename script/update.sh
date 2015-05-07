@@ -6,8 +6,8 @@
 scriptpath=${0:a:h}
 
 function update() {
-  if [ -f $1 ]; then
-    if [ ! -d $2 ]; then
+  if [[ -f $1 ]]; then
+    if [[ ! -d $2 ]]; then
       mkdir -p $2
     fi
 
