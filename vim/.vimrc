@@ -30,10 +30,10 @@ set expandtab     " use space instead of tab
 " key bindings
 "
 set pastetoggle=<F2> " toggle paste
-map <F3>    :bp<CR>  " next buffer
-map <F4>    :bn<CR>  " previous buffer
-map <tab>   :bn<CR>  " next buffer
-map <S-tab> :bp<CR>  " previous buffer
+map <F3>    :bp<CR>  " previous buffer
+map <F4>    :bn<CR>  " next buffer
+map <tab>   :bn<CR>  " next buffer in command mode
+map <S-tab> :bp<CR>  " previous buffer in command mode
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
