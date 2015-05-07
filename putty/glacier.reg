@@ -1,7 +1,5 @@
 Windows Registry Editor Version 5.00
 
-; https://github.com/primedirective/Glacier-Remixes
-
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\Glacier]
 "Colour0"="255,255,255"
 "Colour1"="255,255,255"
