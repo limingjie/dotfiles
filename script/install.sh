@@ -4,6 +4,7 @@
 # https://github.com/limingjie/dotfiles
 
 scriptpath=${0:a:h}
+dotfilesroot=${scriptpath:h}
 
 function install_ohmyzsh() {
   if [[ ! -d ~/.oh-my-zsh ]]; then
@@ -27,16 +28,17 @@ echo "Start installation..."
 install_ohmyzsh
 
 # update .zshrc
-install_dotfile ${scriptpath}/../zsh/.zshrc ~/
+install_dotfile ${dotfilesroot}/zsh/.zshrc ~/
 
 # update config.fish
-install_dotfile ${scriptpath}/../fish/config.fish ~/.config/fish/
+install_dotfile ${dotfilesroot}/fish/config.fish ~/.config/fish/
 
 # update .tmux.conf
-install_dotfile ${scriptpath}/../tmux/.tmux.conf ~/
+install_dotfile ${dotfilesroot}/tmux/.tmux.conf ~/
 
 # install vim plugin
-${scriptpath}/vimplugin.sh
+${dotfilesroot}mplugin.sh
 
 # update .vimrc
-install_dotfile ${scriptpath}/../vim/.vimrc ~/
+install_dotfile ${dotfilesroot}/vim/.vimrc ~/
+

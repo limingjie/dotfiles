@@ -36,3 +36,4 @@ install_pathogen
 
 # install vim themes and plug-ins
 install_plugins
+

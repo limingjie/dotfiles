@@ -4,6 +4,7 @@
 # https://github.com/limingjie/dotfiles
 
 scriptpath=${0:a:h}
+dotfilesroot=${scriptpath:h}
 
 function update() {
   if [[ -f $1 ]]; then
@@ -19,13 +20,14 @@ function update() {
 echo "start updating..."
 
 # update .zshrc
-update ~/.zshrc ${scriptpath}/zsh
+update ~/.zshrc ${dotfilesroot}/zsh
 
 # update config.fish
-update ~/.config/fish/config.fish ${scriptpath}/fish
+update ~/.config/fish/config.fish ${dotfilesroot}/fish
 
 # update .tmux.conf
-update ~/.tmux.conf ${scriptpath}/tmux
+update ~/.tmux.conf ${dotfilesroot}/tmux
 
 # update .vimrc
-update ~/.vimrc ${scriptpath}/vim
+update ~/.vimrc ${dotfilesroot}/vim
+
