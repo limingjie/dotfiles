@@ -27,18 +27,18 @@ echo "Start installation..."
 # install oh-my-zsh
 install_ohmyzsh
 
-# update .zshrc
+# install .zshrc
 install_dotfile ${dotfilesroot}/zsh/.zshrc ~/
 
-# update config.fish
+# install config.fish
 install_dotfile ${dotfilesroot}/fish/config.fish ~/.config/fish/
 
-# update .tmux.conf
+# install .tmux.conf
 install_dotfile ${dotfilesroot}/tmux/.tmux.conf ~/
 
 # install vim plugin
 ${scriptpath}/vimplugin.sh
 
-# update .vimrc
+# install .vimrc
 install_dotfile ${dotfilesroot}/vim/.vimrc ~/
 
