@@ -37,7 +37,7 @@ install_dotfile ${dotfilesroot}/fish/config.fish ~/.config/fish/
 install_dotfile ${dotfilesroot}/tmux/.tmux.conf ~/
 
 # install vim plugin
-${dotfilesroot}mplugin.sh
+${scriptpath}/vimplugin.sh
 
 # update .vimrc
 install_dotfile ${dotfilesroot}/vim/.vimrc ~/
