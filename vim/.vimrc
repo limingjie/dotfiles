@@ -19,6 +19,10 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+" buffers
+set hidden   " hide buffers in background, instead of closing and re-opening
+set confirm  " confirm before closing with unsaved buffers
+
 " indentation
 set tabstop=4     " size of hard tabstop (\t)
 set shiftwidth=4  " size of indent
@@ -29,11 +33,15 @@ set expandtab     " use space instead of tab
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " key bindings
 "
-set pastetoggle=<F2> " toggle paste
-map <F3>    :bp<CR>  " previous buffer
-map <F4>    :bn<CR>  " next buffer
-map <tab>   :bn<CR>  " next buffer in command mode
-map <S-tab> :bp<CR>  " previous buffer in command mode
+set pastetoggle=<F2>               " toggle paste
+inoremap jj     <Esc>              " use jj as <Esc>
+inoremap <F3>   <Esc>:bp<CR>       " previous buffer in insert mode
+inoremap <F4>   <Esc>:bn<CR>       " next buffer in insert mode
+nnoremap <Tab>       :bn<CR>       " next buffer in command mode
+nnoremap <S-Tab>     :bp<CR>       " previous buffer in command mode
+nnoremap <F3>        :bp<CR>       " previous buffer in command mode
+nnoremap <F4>        :bn<CR>       " next buffer in command mode
+nnoremap <F5> :buffers<CR>:buffer<Space>  " list and goto buffer
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
