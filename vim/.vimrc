@@ -42,6 +42,7 @@ set pastetoggle=<F2>               " toggle paste
 inoremap jj     <Esc>              " use jj as <Esc>
 inoremap <F3>   <Esc>:bp<CR>       " previous buffer in insert mode
 inoremap <F4>   <Esc>:bn<CR>       " next buffer in insert mode
+nnoremap <CR>        :noh<CR><CR>  " clear last search pattern/highlight
 nnoremap <Tab>       :bn<CR>       " next buffer in command mode
 nnoremap <S-Tab>     :bp<CR>       " previous buffer in command mode
 nnoremap <F3>        :bp<CR>       " previous buffer in command mode
