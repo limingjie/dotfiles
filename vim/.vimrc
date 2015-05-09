@@ -6,11 +6,11 @@ if &term == "screen"
   set t_Co=256
 endif
 
-" set syntax on
-syntax on
-
-" enable line number
-set number
+set visualbell     " silence the bell, use a flash instead
+set number         " enable line number
+set showmatch      " show matching brackets/braces/parantheses.
+set showcmd        " show (partial) command in status line.
+syntax on          " set syntax on
 
 " vertical ruler on column 80
 if exists('+colorcolumn')
@@ -19,16 +19,21 @@ else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
 
+" search
+set hlsearch       " highlight all matches
+set incsearch      " display match while typing
+
 " buffers
-set hidden   " hide buffers in background, instead of closing and re-opening
-set confirm  " confirm before closing with unsaved buffers
+set hidden         " hide buffers in background, instead of closing, re-opening
+set confirm        " confirm before closing with unsaved buffers
 
 " indentation
-set tabstop=4     " size of hard tabstop (\t)
-set shiftwidth=4  " size of indent
-set softtabstop=4 " size of soft tabstop
-set smarttab      " 
-set expandtab     " use space instead of tab
+set autoindent
+set tabstop=4      " size of hard tabstop (\t)
+set shiftwidth=4   " size of indent
+set softtabstop=4  " size of soft tabstop
+set smarttab       " enable smart tab 
+set expandtab      " use space instead of tab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " key bindings
@@ -41,7 +46,7 @@ nnoremap <Tab>       :bn<CR>       " next buffer in command mode
 nnoremap <S-Tab>     :bp<CR>       " previous buffer in command mode
 nnoremap <F3>        :bp<CR>       " previous buffer in command mode
 nnoremap <F4>        :bn<CR>       " next buffer in command mode
-nnoremap <F5> :buffers<CR>:buffer<Space>  " list and goto buffer
+nnoremap <F5> :buffers<CR>:buffer<Space> " list and goto buffer
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugins
