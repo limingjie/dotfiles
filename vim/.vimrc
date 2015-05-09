@@ -20,7 +20,7 @@ else
 endif
 
 " search
-set hlsearch       " highlight all matches
+set hlsearch       " highlight all matches, use :noh to clear highlight
 set incsearch      " display match while typing
 
 " buffers
