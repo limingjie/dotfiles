@@ -5,17 +5,10 @@
 - putty.reg
 
   ```
-  ; use xterm-256color for 256 color
-  "TerminalType"="xterm-256color"
-
-  ; utf-8
-  "LineCodePage"="UTF-8"
-
-  ; 65535 lines of scrollback
-  "ScrollbackLines"=dword:0000ffff
-
-  ; terminal size 160x45
-  "TermWidth"=dword:000000a0
+  "TerminalType"="xterm-256color"        ; use xterm-256color for 256 color
+  "LineCodePage"="UTF-8"                 ; utf-8
+  "ScrollbackLines"=dword:0000ffff       ; 65535 lines of scrollback
+  "TermWidth"=dword:000000a0             ; terminal size 160x45
   "TermHeight"=dword:0000002D
   ```
 
