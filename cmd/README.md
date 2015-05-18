@@ -1,6 +1,6 @@
 # Command Prompt Configuration and Color Scheme
 
-## Command Prompt
+## Command Prompt Configuration
 
 - cmd.reg
 
