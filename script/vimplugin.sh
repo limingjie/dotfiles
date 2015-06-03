@@ -25,6 +25,7 @@ function install_plugins() {
   bundle=~/.vim/bundle
   cd ${bundle}
   install_update_plugin ${bundle} gruvbox       https://github.com/morhetz/gruvbox.git
+  install_update_plugin ${bundle} solarized     https://github.com/altercation/vim-colors-solarized.git
   install_update_plugin ${bundle} vim-airline   https://github.com/bling/vim-airline.git
   install_update_plugin ${bundle} vim-gitgutter https://github.com/airblade/vim-gitgutter.git
   install_update_plugin ${bundle} vim-fugitive  https://github.com/tpope/vim-fugitive

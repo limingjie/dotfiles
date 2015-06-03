@@ -32,7 +32,7 @@ set autoindent
 set tabstop=4      " size of hard tabstop (\t)
 set shiftwidth=4   " size of indent
 set softtabstop=4  " size of soft tabstop
-set smarttab       " enable smart tab 
+set smarttab       " enable smart tab
 set expandtab      " use space instead of tab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -67,7 +67,10 @@ let g:airline#extensions#tmuxline#enabled=1 " enable tmuxline
 let g:gitgutter_diff_args='-w'
 let g:gitgutter_realtime=1
 
-" theme gruvbox
-set background=dark
-colorscheme gruvbox
+" gruvbox
+" colorscheme gruvbox
 
+" solarized dark/light
+" set background=light
+set background=dark
+colorscheme solarized
