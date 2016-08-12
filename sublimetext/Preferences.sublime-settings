@@ -5,8 +5,8 @@
     "aprosopo_dark_aqua": true,
     "aprosopo_dark_dirty_orange": true,
     "aprosopo_dirty_bar": true,
-    "color_scheme": "Packages/Theme - Aprosopo/Tomorrow-Night-Eighties-Stormy.tmTheme",
-    "theme": "Aprosopo Dark@st3.sublime-theme",
+	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).tmTheme",
+	"theme": "Aprosopo Dark@st3.sublime-theme",
 
     // Font
     "font_face": "Fira Code",
