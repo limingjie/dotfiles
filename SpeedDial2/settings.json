@@ -4,13 +4,43 @@
       "id": 1,
       "title": "Oracle",
       "color": "FF0000",
-      "position": 99
+      "position": 2
     },
     "1": {
-      "id": 2,
-      "title": "Resources",
+      "id": 6,
+      "title": "Sprints - Bugs",
       "color": "FFFFFF",
-      "position": 99
+      "position": 3
+    },
+    "2": {
+      "id": 7,
+      "title": "EM Siebel",
+      "color": "FFFFFF",
+      "position": 4
+    },
+    "3": {
+      "id": 3,
+      "title": "Language Study",
+      "color": "FFFFFF",
+      "position": 5
+    },
+    "4": {
+      "id": 2,
+      "title": "SVG",
+      "color": "FF00FF",
+      "position": 6
+    },
+    "5": {
+      "id": 4,
+      "title": "Programming",
+      "color": "FFFFFF",
+      "position": 7
+    },
+    "6": {
+      "id": 5,
+      "title": "Mark",
+      "color": "FFFFFF",
+      "position": 8
     }
   },
   "dials": {
@@ -34,8 +64,8 @@
       "url": "http://my.oracle.com/index.htm",
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
       "ts_created": 1470635528,
-      "visits": 3,
-      "visits_morning": 0,
+      "visits": 4,
+      "visits_morning": 1,
       "visits_afternoon": 3,
       "visits_evening": 0,
       "visits_night": 0,
@@ -43,6 +73,34 @@
       "idgroup": 1
     },
     "2": {
+      "id": 28,
+      "title": "Sketch App Sources - Free design resources and plugins - Icons, UI Kits, Wireframes, iOS, Android Templates for Sketch",
+      "url": "http://www.sketchappsources.com/",
+      "thumbnail": "http://www.sketchappsources.com/images/sketch-app-sources-rose2x.png",
+      "ts_created": 1470821463,
+      "visits": 1,
+      "visits_morning": 1,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 0,
+      "idgroup": 2
+    },
+    "3": {
+      "id": 40,
+      "title": "Electron - Build cross platform desktop apps with JavaScript, HTML, and CSS.",
+      "url": "http://electron.atom.io/",
+      "thumbnail": "",
+      "ts_created": 1471482913,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 0,
+      "idgroup": 5
+    },
+    "4": {
       "id": 9,
       "title": "Aria People",
       "url": "https://people.us.oracle.com/pls/oracle/f?p=8000:1:::NO:::",
@@ -56,7 +114,7 @@
       "position": 1,
       "idgroup": 1
     },
-    "3": {
+    "5": {
       "id": 16,
       "title": "Bing",
       "url": "http://www.bing.com",
@@ -70,7 +128,35 @@
       "position": 1,
       "idgroup": 0
     },
-    "4": {
+    "6": {
+      "id": 29,
+      "title": "Free vector icons - SVG, PSD, PNG, EPS & Icon Font - Thousands of free icons",
+      "url": "http://www.flaticon.com/",
+      "thumbnail": "https://media.freepik.com/flaticon/img/flaticon-logo.svg",
+      "ts_created": 1470821584,
+      "visits": 1,
+      "visits_morning": 1,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 1,
+      "idgroup": 2
+    },
+    "7": {
+      "id": 36,
+      "title": "Welcome to Marxico - Marxico - Markdown Editor for Evernote",
+      "url": "http://marxi.co/",
+      "thumbnail": "",
+      "ts_created": 1471233505,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 1,
+      "idgroup": 5
+    },
+    "8": {
       "id": 2,
       "title": "Gmail",
       "url": "https://mail.google.com",
@@ -84,21 +170,49 @@
       "position": 2,
       "idgroup": 0
     },
-    "5": {
+    "9": {
       "id": 6,
       "title": "Confluence Blaster",
       "url": "http://confluence.oraclecorp.com/confluence/display/SEBLCC/Blaster",
       "thumbnail": "https://worldvectorlogo.com/download/confluence.svg",
       "ts_created": 1470639140,
-      "visits": 5,
+      "visits": 8,
       "visits_morning": 1,
-      "visits_afternoon": 4,
+      "visits_afternoon": 7,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 2,
       "idgroup": 1
     },
-    "6": {
+    "10": {
+      "id": 27,
+      "title": "World Vector Logo — Brand logos free to download",
+      "url": "https://worldvectorlogo.com/",
+      "thumbnail": "https://worldvectorlogo.com/img/logo.svg",
+      "ts_created": 1470821107,
+      "visits": 3,
+      "visits_morning": 0,
+      "visits_afternoon": 3,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 2,
+      "idgroup": 2
+    },
+    "11": {
+      "id": 39,
+      "title": "Rocket.Chat",
+      "url": "https://rocket.chat/",
+      "thumbnail": "",
+      "ts_created": 1471482695,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 2,
+      "idgroup": 5
+    },
+    "12": {
       "id": 3,
       "title": "Google Play",
       "url": "https://play.google.com",
@@ -112,49 +226,63 @@
       "position": 3,
       "idgroup": 0
     },
-    "7": {
+    "13": {
       "id": 14,
       "title": "Blaster Daily Scrum - SEBLCC - Common Components -",
       "url": "https://confluence.oraclecorp.com/confluence/display/SEBLCC/Blaster+Daily+Scrum",
       "thumbnail": "https://worldvectorlogo.com/download/confluence.svg",
       "ts_created": 1470794355,
-      "visits": 0,
-      "visits_morning": 0,
-      "visits_afternoon": 0,
+      "visits": 2,
+      "visits_morning": 1,
+      "visits_afternoon": 1,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 3,
       "idgroup": 1
     },
-    "8": {
+    "14": {
       "id": 15,
       "title": "[Blaster Daily Scrum] Issue Navigator - Central JIRA",
       "url": "https://jira.oraclecorp.com/jira/issues/?filter=48580",
-      "thumbnail": "https://worldvectorlogo.com/download/confluence.svg",
+      "thumbnail": "https://worldvectorlogo.com/download/jira.svg",
       "ts_created": 1470794360,
-      "visits": 1,
-      "visits_morning": 1,
+      "visits": 3,
+      "visits_morning": 3,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 4,
       "idgroup": 1
     },
-    "9": {
+    "15": {
       "id": 20,
       "title": "Github",
       "url": "https://github.com",
       "thumbnail": "http://i.imgur.com/Fk5t9Om.png",
       "ts_created": 1470794978,
-      "visits": 0,
+      "visits": 1,
       "visits_morning": 0,
-      "visits_afternoon": 0,
+      "visits_afternoon": 1,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 4,
       "idgroup": 0
     },
-    "10": {
+    "16": {
+      "id": 7,
+      "title": "Jira Common Components",
+      "url": "https://jira.oraclecorp.com/jira/browse/SEBLCC/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel",
+      "thumbnail": "https://worldvectorlogo.com/download/jira.svg",
+      "ts_created": 1470639194,
+      "visits": 5,
+      "visits_morning": 0,
+      "visits_afternoon": 5,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 5,
+      "idgroup": 1
+    },
+    "17": {
       "id": 11,
       "title": "Wired",
       "url": "http://www.wired.com",
@@ -168,35 +296,7 @@
       "position": 5,
       "idgroup": 0
     },
-    "11": {
-      "id": 24,
-      "title": "Calendars - SEBLCC - Common Components -",
-      "url": "https://confluence.oraclecorp.com/confluence/display/SEBLCC/calendar/74a59224-2de7-4218-94a7-67f553460eb6?calendarName=Blaster%20Availability",
-      "thumbnail": "https://wac-cdn.atlassian.com/dam/jcr:a22c9f02-b225-4e34-9f1d-e5ac0265e543/confluence_rgb_blue.png?cdnVersion=cy",
-      "ts_created": 1470810459,
-      "visits": 0,
-      "visits_morning": 0,
-      "visits_afternoon": 0,
-      "visits_evening": 0,
-      "visits_night": 0,
-      "position": 5,
-      "idgroup": 1
-    },
-    "12": {
-      "id": 7,
-      "title": "Jira Common Components",
-      "url": "https://jira.oraclecorp.com/jira/browse/SEBLCC/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel",
-      "thumbnail": "https://worldvectorlogo.com/download/jira.svg",
-      "ts_created": 1470639194,
-      "visits": 5,
-      "visits_morning": 0,
-      "visits_afternoon": 5,
-      "visits_evening": 0,
-      "visits_night": 0,
-      "position": 6,
-      "idgroup": 1
-    },
-    "13": {
+    "18": {
       "id": 12,
       "title": "Home - Quora",
       "url": "https://www.quora.com/",
@@ -210,21 +310,35 @@
       "position": 6,
       "idgroup": 0
     },
-    "14": {
+    "19": {
+      "id": 24,
+      "title": "Blaster Availability",
+      "url": "https://confluence.oraclecorp.com/confluence/display/SEBLCC/calendar/74a59224-2de7-4218-94a7-67f553460eb6?calendarName=Blaster%20Availability",
+      "thumbnail": "http://veradekok.nl/New%20Tab%20progsels/day.php",
+      "ts_created": 1470810459,
+      "visits": 4,
+      "visits_morning": 1,
+      "visits_afternoon": 3,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 6,
+      "idgroup": 1
+    },
+    "20": {
       "id": 10,
-      "title": "Build Schedule",
+      "title": "Siebel Build Schedule",
       "url": "https://apex.oraclecorp.com/pls/apex/f?p=11705:1:115984785286716:::::&tz=8:00",
-      "thumbnail": "",
+      "thumbnail": "http://veradekok.nl/New%20Tab%20progsels/day.php",
       "ts_created": 1470639292,
-      "visits": 0,
-      "visits_morning": 0,
-      "visits_afternoon": 0,
+      "visits": 9,
+      "visits_morning": 1,
+      "visits_afternoon": 8,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 7,
       "idgroup": 1
     },
-    "15": {
+    "21": {
       "id": 17,
       "title": "Ted Talks",
       "url": "http://www.ted.com",
@@ -238,7 +352,7 @@
       "position": 7,
       "idgroup": 0
     },
-    "16": {
+    "22": {
       "id": 13,
       "title": "99% Invisible",
       "url": "http://99percentinvisible.org/",
@@ -252,7 +366,21 @@
       "position": 8,
       "idgroup": 0
     },
-    "17": {
+    "23": {
+      "id": 26,
+      "title": "Oracle BI Interactive Dashboards - Home",
+      "url": "https://rms.us.oracle.com/analytics/saw.dll?Dashboard",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg",
+      "ts_created": 1470819298,
+      "visits": 1,
+      "visits_morning": 0,
+      "visits_afternoon": 1,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 8,
+      "idgroup": 1
+    },
+    "24": {
       "id": 23,
       "title": "Hackernews",
       "url": "https://news.ycombinator.com",
@@ -266,53 +394,138 @@
       "position": 9,
       "idgroup": 0
     },
-    "18": {
-      "id": 26,
-      "title": "Oracle BI Interactive Dashboards - Home",
-      "url": "https://rms.us.oracle.com/analytics/saw.dll?Dashboard",
-      "thumbnail": "",
-      "ts_created": 1470819298,
+    "25": {
+      "id": 30,
+      "title": "Vocabulary.com - Learn Words - English Dictionary",
+      "url": "https://www.vocabulary.com/",
+      "thumbnail": "https://cdn.vocab.com/images/header/logo-1wobq9i.png",
+      "ts_created": 1470894835,
       "visits": 0,
       "visits_morning": 0,
       "visits_afternoon": 0,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 999,
-      "idgroup": 1
+      "idgroup": 3
     },
-    "19": {
-      "id": 27,
-      "title": "World Vector Logo — Brand logos free to download",
-      "url": "https://worldvectorlogo.com/",
-      "thumbnail": "",
-      "ts_created": 1470821107,
+    "26": {
+      "id": 31,
+      "title": "Duolingo: Learn Spanish, French and other languages for free",
+      "url": "https://www.duolingo.com/",
+      "thumbnail": "https://d7mj4aqfscim2.cloudfront.net/images/owl-sprite17.svg",
+      "ts_created": 1470894871,
       "visits": 1,
       "visits_morning": 0,
       "visits_afternoon": 1,
       "visits_evening": 0,
       "visits_night": 0,
       "position": 999,
-      "idgroup": 2
+      "idgroup": 3
+    },
+    "27": {
+      "id": 32,
+      "title": "Login - Memrise",
+      "url": "https://www.memrise.com/login/?next=/home/",
+      "thumbnail": "https://d107cgb5lgj7br.cloudfront.net/img/logo/memrise-logo-new.png",
+      "ts_created": 1470894891,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 3
+    },
+    "28": {
+      "id": 33,
+      "title": "tonsky/FiraCode: Monospaced font with programming ligatures",
+      "url": "https://github.com/tonsky/FiraCode",
+      "thumbnail": "",
+      "ts_created": 1470984105,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 4
+    },
+    "29": {
+      "id": 34,
+      "title": "Monoid",
+      "url": "http://larsenwork.com/monoid/",
+      "thumbnail": "",
+      "ts_created": 1470984317,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 4
+    },
+    "30": {
+      "id": 35,
+      "title": "i-tu/Hasklig: Hasklig - a code font with monospaced ligatures",
+      "url": "https://github.com/i-tu/Hasklig",
+      "thumbnail": "",
+      "ts_created": 1470984417,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 4
+    },
+    "31": {
+      "id": 38,
+      "title": "Blaster_Sprint_2016_08_30",
+      "url": "https://bug.oraclecorp.com/pls/bug/WEBBUG_REPORTS.Saved_Search?id=389460160816014346",
+      "thumbnail": "",
+      "ts_created": 1471337043,
+      "visits": 3,
+      "visits_morning": 1,
+      "visits_afternoon": 2,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 6
+    },
+    "32": {
+      "id": 41,
+      "title": "EMDevelopmentContacts < ServerTechEMSupport < TWiki",
+      "url": "http://globaldc-git.oracle.com/perl/twiki/view/ServerTechEMSupport/EMDevelopmentContacts",
+      "thumbnail": "",
+      "ts_created": 1471832054,
+      "visits": 0,
+      "visits_morning": 0,
+      "visits_afternoon": 0,
+      "visits_evening": 0,
+      "visits_night": 0,
+      "position": 999,
+      "idgroup": 7
     }
   },
   "settings": {
     "firstTime": "false",
     "options.alwaysNewTab": "0",
-    "options.apps.show": "1",
-    "options.apps.theme": "transparent",
-    "options.background": "images/themes/light/background_top.jpg",
-    "options.backgroundPattern": "images/themes/light/background_strip.jpg",
-    "options.backgroundPosition": "right top",
-    "options.backgroundSize": "original",
+    "options.appOrder": "[\"joodangkbfjnajiiifokapkpmhfnpleo\",\"gbchcmhmhahfdphkhkmpfmihenigjmpp\",\"becloognjehhioodmnimnehjcibkloed\",\"hipbfijinpcgfogaopmgehiegacbhmob\",\"pjkljhegncpnkpknbcohdijeoejaedia\",\"ejidjjhkpiempkbhmpbfngldlkglhimk\",\"mkaakpdehdafacodkgkpghoibnmamcme\",\"apdfllckaahabafndbhieahigkjlhalf\",\"jhknlonaankphkkbnmjdlpehkinifeeg\",\"komhbcfkdcgmcdoenjcjheifdiabikfi\",\"coobgpohoikkiipiblmjeljniedjpjpf\",\"pnhechapfaindjhompbnflcldabbghjo\",\"blpcfgokakmgnkcojhhkbfbldkacnbeo\",\"ahfgeienlihckogmohjhadlkjgocpleb\"]",
+    "options.apps.show": "0",
+    "options.apps.theme": "dark",
+    "options.background": "",
+    "options.backgroundPattern": "http://farm8.static.flickr.com/7165/6430432855_0ef6a52f8e_b.jpg",
+    "options.backgroundPosition": "left top",
+    "options.backgroundSize": "auto",
     "options.centerThumbnailsVertically": "1",
     "options.centerVertically": "0",
-    "options.colors.bg": "FFFFFF",
+    "options.colors.bg": "",
     "options.colors.border": "CCCCCC",
     "options.colors.borderover": "999999",
-    "options.colors.dialbg": "FFFFFF",
-    "options.colors.dialbginner": "FFFFFF",
-    "options.colors.dialbginnerover": "FFFFFF",
-    "options.colors.dialbgover": "FFFFFF",
+    "options.colors.dialbg": "FDF6E3",
+    "options.colors.dialbginner": "FDF6E3",
+    "options.colors.dialbginnerover": "FDF6E3",
+    "options.colors.dialbgover": "FDF6E3",
     "options.colors.title": "8C7E7E",
     "options.colors.titleover": "333333",
     "options.columns": "6",
@@ -322,23 +535,23 @@
     "options.dialspacing": "8",
     "options.dialstyle.corners": "4",
     "options.dialstyle.shadow": "none",
-    "options.fontface": "Helvetica,\"Helvetica Nueue\";arial,sans-serif",
+    "options.fontface": "Verdana, Geneva, sans-serif;",
     "options.fontsize": "16",
     "options.fontstyle": "font-weight:normal;font-style:normal;",
-    "options.highlight": "0",
+    "options.highlight": "1",
     "options.installation_time": "1470635422",
     "options.keepActiveGroup": "1",
     "options.order": "position",
     "options.padding": "4",
     "options.refreshThumbnails": "0",
-    "options.repeatbackground": "repeat-x",
+    "options.repeatbackground": "repeat",
     "options.scrollLayout": "1",
     "options.showAddButton": "1",
     "options.showContextMenu": "1",
     "options.showOptionsButton": "1",
     "options.showSearch": "1",
     "options.showTitle": "1",
-    "options.showVisits": "1",
+    "options.showVisits": "0",
     "options.sidebar": "1",
     "options.sidebar.showApps": "1",
     "options.sidebar.showBookmarks": "1",
@@ -355,8 +568,8 @@
     "sys.containerwidth": "1468px",
     "sys.dialheight": "158.5",
     "sys.dialwidth": "238",
-    "sys.groups": "2",
-    "sys.rows": "1",
+    "sys.groups": "7",
+    "sys.rows": "2",
     "sys.rowspacing": "8"
   }
 }
