@@ -1,15 +1,28 @@
 // Place your settings in this file to overwrite the default settings
 {
-	// Columns at which to show vertical rulers
-	"editor.rulers": [80, 100, 120],
+    // Font
+    "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
 
-	// Use Ligature Font
-	"editor.fontFamily": "Fira Code",
-	"editor.fontSize": 14,
-	"editor.fontLigatures": true,
+    // Editor
+    "editor.rulers": [80, 100, 120],
+    "editor.cursorBlinking": "smooth",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderIndentGuides": true,
+    "editor.renderControlCharacters": true,
 
-	// C++ Extension Settings
-	// Install clang from http://llvm.org/releases/download.html
-	"c_cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-	"clang.executable": "C:\\Program Files\\LLVM\\bin\\clang.exe"
+    // Extensions
+    "extensions.autoUpdate": true,
+
+    // File
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "off",
+
+    // Git
+    "git.path": "C:/Program Files/Git/cmd/git.exe",
+
+    // clang
+    "C_Cpp.clang_format_path": "C:/Program Files/LLVM/bin/clang-format.exe",
+    "clang.executable": "C:/Program Files/LLVM/bin/clang.exe"
 }
