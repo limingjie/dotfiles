@@ -3,6 +3,7 @@
     // Font
     "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
     "editor.fontSize": 16,
+    "editor.fontWeight": "300", // Iosevka Light
     "editor.fontLigatures": true,
 
     // Editor
