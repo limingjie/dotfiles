@@ -13,6 +13,11 @@
     "editor.renderIndentGuides": true,
     "editor.renderControlCharacters": true,
 
+    // Terminal
+    "terminal.integrated.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontLigatures": true,
+
     // Extensions
     "extensions.autoUpdate": true,
 
