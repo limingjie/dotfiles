@@ -32,4 +32,7 @@
     // clang
     "C_Cpp.clang_format_path": "C:/Program Files/LLVM/bin/clang-format.exe",
     "clang.executable": "C:/Program Files/LLVM/bin/clang.exe"
+
+    // Trailing Spaces
+    "trailing-spaces.highlightCurrentLine": false
 }
