@@ -2,7 +2,7 @@
 {
     // Font
     "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontWeight": "300", // Iosevka Light
     "editor.fontLigatures": true,
 
@@ -15,7 +15,7 @@
 
     // Terminal
     "terminal.integrated.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontLigatures": true,
 
     // Extensions
@@ -24,6 +24,7 @@
     // File
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "off",
+    "files.eol": "\n",
 
     // Git
     "git.path": "C:/Program Files/Git/cmd/git.exe",
