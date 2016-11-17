@@ -25,6 +25,7 @@
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "off",
     "files.eol": "\n",
+    "files.associations": {"Makefile.*": "makefile"},
 
     // Git
     "git.path": "C:/Program Files/Git/cmd/git.exe",
