@@ -1,0 +1,47 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Font
+    "editor.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+
+    // Editor
+    "editor.rulers": [80, 100, 120, 129, 137, 144, 150, 155, 159, 162, 164, 165],
+    "editor.cursorBlinking": "smooth",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderIndentGuides": true,
+    "editor.renderControlCharacters": true,
+    "editor.mouseWheelZoom": true,
+
+    // Terminal
+    "terminal.integrated.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.cursorBlinking": true,
+
+    // Extensions
+    "extensions.autoUpdate": true,
+
+    // File
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.autoSave": "off",
+    "files.associations": {"Makefile.*": "makefile"},
+
+    // Git
+    "git.path": "/usr/bin/git",
+
+    // clang
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "clang.executable": "/usr/bin/clang",
+    "window.zoomLevel": 0,
+
+    // golang
+    "go.goroot": "/usr/lib/go",
+    "go.gopath": "~/go",
+
+    // Trailing Spaces
+    "trailing-spaces.highlightCurrentLine": false,
+
+    "git.confirmSync": false,
+}
