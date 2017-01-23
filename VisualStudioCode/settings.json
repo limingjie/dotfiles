@@ -2,7 +2,7 @@
 {
     // Font
     "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "editor.fontWeight": "300", // Iosevka Light
     "editor.fontLigatures": true,
 
@@ -12,19 +12,21 @@
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
     "editor.renderControlCharacters": true,
+    "editor.mouseWheelZoom": true,
 
     // Terminal
     "terminal.integrated.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.cursorBlinking": true,
 
     // Extensions
     "extensions.autoUpdate": true,
 
     // File
     "files.trimTrailingWhitespace": true,
-    "files.autoSave": "off",
     "files.eol": "\n",
+    "files.autoSave": "off",
     "files.associations": {"Makefile.*": "makefile"},
 
     // Git
@@ -32,8 +34,27 @@
 
     // clang
     "C_Cpp.clang_format_path": "C:/Program Files/LLVM/bin/clang-format.exe",
-    "clang.executable": "C:/Program Files/LLVM/bin/clang.exe"
+    "clang.executable": "C:/Program Files/LLVM/bin/clang.exe",
+    "window.zoomLevel": 0,
+
+    // golang
+    "go.goroot": "C:/Go",
+    "go.gopath": "C:/GoPath",
 
     // Trailing Spaces
-    "trailing-spaces.highlightCurrentLine": false
+    "trailing-spaces.highlightCurrentLine": false,
+
+    // MISC
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.confirmSync": false,
+    "sync.gist": "784bf8de957289c43ea06893ed2ef700",
+    "sync.lastUpload": "2017-01-16T08:36:59.946Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "1970-01-01T00:00:00.000Z",
+    "sync.version": 242,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.workspaceSync": false,
+    "sync.anonymousGist": false
 }
