@@ -1,13 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
     // Font
-    "editor.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
     "editor.fontSize": 15,
-    "editor.fontWeight": "300", // Iosevka Light
     "editor.fontLigatures": true,
 
     // Editor
-    "editor.rulers": [80, 100, 120],
+    "editor.rulers": [80, 100, 120, 129, 137, 144, 150, 155, 159, 162, 164, 165],
     "editor.cursorBlinking": "smooth",
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
@@ -15,8 +14,8 @@
     "editor.mouseWheelZoom": true,
 
     // Terminal
-    "terminal.integrated.fontFamily": "Iosevka, Consolas, 'Courier New', monospace",
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontLigatures": true,
     "terminal.integrated.cursorBlinking": true,
 
@@ -44,7 +43,8 @@
     // Trailing Spaces
     "trailing-spaces.highlightCurrentLine": false,
 
-    // MISC
+    // Oracle Proxy
+    "http.proxy": "http://cn-proxy.jp.oracle.com",
     "vsicons.dontShowNewVersionMessage": true,
     "git.confirmSync": false,
     "sync.gist": "784bf8de957289c43ea06893ed2ef700",
