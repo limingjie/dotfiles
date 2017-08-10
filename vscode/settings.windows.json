@@ -2,16 +2,19 @@
 {
     // Font
     "editor.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
 
     // Editor
     "editor.rulers": [80, 100, 120, 129, 137, 144, 150, 155, 159, 162, 164, 165],
-    "editor.cursorBlinking": "smooth",
+    "editor.cursorBlinking": "phase",
     "editor.renderWhitespace": "boundary",
     "editor.renderIndentGuides": true,
     "editor.renderControlCharacters": true,
     "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.wordWrapColumn": 100,
 
     // Terminal
     "terminal.integrated.fontFamily": "'Iosevka Light', Consolas, 'Courier New', monospace",
@@ -24,6 +27,7 @@
 
     // File
     "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "files.eol": "\n",
     "files.autoSave": "off",
     "files.associations": {"Makefile.*": "makefile"},
@@ -39,22 +43,33 @@
     // golang
     "go.goroot": "C:/Go",
     "go.gopath": "C:/GoPath",
+    "go.formatOnSave": true,
 
     // Trailing Spaces
     "trailing-spaces.highlightCurrentLine": false,
 
-    // Oracle Proxy
-    "http.proxy": "http://cn-proxy.jp.oracle.com",
+    // MISC
     "vsicons.dontShowNewVersionMessage": true,
     "git.confirmSync": false,
     "sync.gist": "784bf8de957289c43ea06893ed2ef700",
-    "sync.lastUpload": "2017-01-16T08:36:59.946Z",
+    "sync.lastUpload": "2017-06-28T05:21:31.952Z",
     "sync.autoDownload": false,
     "sync.autoUpload": false,
     "sync.lastDownload": "1970-01-01T00:00:00.000Z",
-    "sync.version": 242,
+    "sync.version": 262,
     "sync.showSummary": true,
     "sync.forceDownload": false,
-    "sync.workspaceSync": false,
-    "sync.anonymousGist": false
+    "sync.anonymousGist": false,
+    "workbench.colorTheme": "Monokai",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
 }
