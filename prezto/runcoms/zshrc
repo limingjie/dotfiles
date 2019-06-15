@@ -1,0 +1,27 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias ls='exa -g'
+alias mux=tmuxinator
+alias aqua=asciiquarium
+alias cow='fortune | cowsay | lolcat -t'
+alias sl='/usr/local/bin/sl'
+
+# tmuxinator
+export PATH=/usr/local/Cellar/ruby/2.6.3/bin/:/usr/local/lib/ruby/gems/2.6.0/bin/:$PATH
+export EDITOR='nvim'
+source ~/.config/tmux/tmuxinator.ksh
+
