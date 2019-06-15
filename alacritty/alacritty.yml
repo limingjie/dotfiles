@@ -136,7 +136,7 @@ font:
     style: Italic
 
   # Point size
-  size: 16.0
+  size: 17.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -189,9 +189,9 @@ colors:
   #
   # Colors which should be used to draw the terminal cursor. If these are unset,
   # the cursor color will be the inverse of the cell color.
-  #cursor:
-  #  text: '0x000000'
-  #  cursor: '0xffffff'
+  cursor:
+    text: '0x000000'
+    cursor: '0xffffff'
 
   # Selection colors
   #
@@ -278,7 +278,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.9
+  background_opacity: 0.8
 
 # Mouse bindings
 #
@@ -296,7 +296,7 @@ background_opacity: 0.9
 # All available `mods` and `action` values are documented in the key binding
 # section.
 mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
+  - { mouse: Right, action: PasteSelection }
 
 mouse:
   # Click settings
@@ -308,7 +308,7 @@ mouse:
   triple_click: { threshold: 300 }
 
   # If this is `true`, the cursor is temporarily hidden when typing.
-  hide_when_typing: false
+  hide_when_typing: true
 
   url:
     # URL launcher
@@ -352,7 +352,7 @@ cursor:
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  unfocused_hollow: true
+  unfocused_hollow: false
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -360,13 +360,13 @@ live_config_reload: true
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
-# Entries in `shell.args` are passed unmodified as arguments to the shell.
+# Entries in `shell.args`: are passed unmodified as arguments to the shell.
 #
 # Default:
 #   - (Linux/macOS) /bin/bash --login
 #   - (Windows) powershell
 shell:
-  program: /bin/zsh
+  program: /usr/local/bin/zsh
 #  args:
 #    - --login
 

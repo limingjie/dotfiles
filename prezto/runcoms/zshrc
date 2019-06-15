@@ -12,16 +12,22 @@ fi
 
 # Customize to your needs...
 
+# FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Aliases
 alias ls='exa -g'
-alias mux=tmuxinator
+alias ll='exa -lg'
+alias sl='/usr/local/bin/sl'
 alias aqua=asciiquarium
 alias cow='fortune | cowsay | lolcat -t'
-alias sl='/usr/local/bin/sl'
+alias cowzh='fortune | ~/trans -b -t zh | cowsay | lolcat -t'
 
 # tmuxinator
 export PATH=/usr/local/Cellar/ruby/2.6.3/bin/:/usr/local/lib/ruby/gems/2.6.0/bin/:$PATH
 export EDITOR='nvim'
-source ~/.config/tmux/tmuxinator.ksh
+source ~/.config/tmux/tmuxinator.zsh
+
+# fasd
+eval "$(fasd --init auto)"
 
