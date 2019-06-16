@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 # FZF
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
 # Aliases
 alias ls='exa -g'
