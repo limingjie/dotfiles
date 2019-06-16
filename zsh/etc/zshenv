@@ -1,0 +1,21 @@
+# Dotless home directory
+
+if [[ -z "$XDG_CONFIG_HOME" ]]
+then
+    export XDG_CONFIG_HOME="$HOME/.config/"
+fi
+
+# zsh
+export ZDOTDIR=$XDG_CONFIG_HOME/zsh
+
+# fasd
+export _FASD_DATA=$XDG_CONFIG_HOME/fasd/.fasd
+
+# less
+export LESSHISTFILE="${XDG_CONFIG_HOME}/less/history"
+export LESSKEY="${XDG_CONFIG_HOME}/less/keys"
+
+# vim
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/nvim/init.vim" | source $MYVIMRC'
+export VIMDOTDIR="$XDG_CONFIG_HOME/nvim"
+
