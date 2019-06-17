@@ -29,6 +29,20 @@ export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
 export VIMDOTDIR="$XDG_CONFIG_HOME/vim"
 ```
 
+## Homebrew Install ZSH (mac)
+
+Install ZSH by homebrew to get the latest version, and add it to `/etc/shells`
+
+```shell
+# Install zsh
+brew install zsh
+
+# Add homebrew installed zsh to /etc/shells
+which zsh
+sudo sh -c "echo $(which zsh) >> /etc/shells"
+chsh -s $(which zsh)
+```
+
 ## Install and Setup Prezto
 
 [Prezto](https://github.com/sorin-ionescu/prezto)
