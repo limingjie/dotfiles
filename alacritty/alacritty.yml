@@ -365,8 +365,8 @@ live_config_reload: true
 # Default:
 #   - (Linux/macOS) /bin/bash --login
 #   - (Windows) powershell
-shell:
-  program: /usr/local/bin/zsh
+# shell:
+#  program: /usr/local/bin/zsh
 #  args:
 #    - --login
 
