@@ -16,7 +16,7 @@ fi
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
 # fasd
-export _FASD_DATA=$XDG_CONFIG_HOME/fasd/.fasd
+# export _FASD_DATA=$XDG_CONFIG_HOME/fasd/.fasd
 
 # less
 export LESSHISTFILE=${XDG_CONFIG_HOME}/less/history
