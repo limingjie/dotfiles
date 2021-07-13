@@ -18,6 +18,9 @@ zstyle ':prezto:*:*' color 'yes'
 # Add additional directories to load prezto modules from
 # zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
 
+# Allow module overrides when pmodule-dirs causes module name collisions
+# zstyle ':prezto:load' pmodule-allow-overrides 'yes'
+
 # Set the Zsh modules to load (man zshmodules).
 # zstyle ':prezto:load' zmodule 'attr' 'stat'
 
@@ -35,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'history-substring-search' \
   'prompt' \
   'fasd' \
   'syntax-highlighting'
@@ -50,7 +54,7 @@ zstyle ':prezto:load' pmodule \
 # Completions
 #
 
-# Set the entries to ignore in static */etc/hosts* for host completion.
+# Set the entries to ignore in static '/etc/hosts' for host completion.
 # zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
 #   '0.0.0.0' '127.0.0.1'
 
@@ -179,7 +183,7 @@ zstyle ':prezto:module:syntax-highlighting' styles \
   'builtin' 'bg=blue' \
   'command' 'bg=blue' \
   'function' 'bg=blue'
-
+#
 # Set syntax pattern styles.
 zstyle ':prezto:module:syntax-highlighting' pattern \
   'rm*-rf*' 'fg=white,bold,bg=red'
@@ -223,4 +227,4 @@ zstyle ':prezto:module:syntax-highlighting' pattern \
 # Enabled safe options. This aliases cp, ln, mv and rm so that they prompt
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
-# zstyle ':prezto:module:utility' safe-ops 'yes'
+zstyle ':prezto:module:utility' safe-ops 'yes'

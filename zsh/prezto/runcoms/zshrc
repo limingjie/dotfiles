@@ -25,11 +25,6 @@ alias sl='/usr/local/bin/sl'
 
 # bat
 alias cat='bat'
-
-# for my son
-alias aqua=asciiquarium
-alias cow='fortune | cowsay | lolcat -t'
-
 # nvim
 alias v=nvim
 alias vi=nvim
@@ -42,11 +37,5 @@ alias vim=nvim
 # FZF
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
-# tmuxinator
-export PATH=$HOME/go/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.6.0/bin/:$PATH
-export EDITOR='nvim'
-source ~/.config/tmux/tmuxinator.zsh
-
 # fasd
 eval "$(fasd --init auto)"
-
