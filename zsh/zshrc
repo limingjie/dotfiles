@@ -10,16 +10,17 @@ bindkey -v
 setopt auto_cd
 setopt correct_all
 
-# autocompletion
-autoload -Uz compinit
-compinit
-zstyle ':completion:*' menu select
-
 # zsh-autocomplete
-# source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# Wait until this many characters have been typed, before showing completions.
+zstyle ':autocomplete:*' min-input 3 # int
+source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # zsh-autosuggestions
-# source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#8f8f8f"
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-syntax-highlighting
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # exa
 alias ls='exa -g'
