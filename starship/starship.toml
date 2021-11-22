@@ -1,0 +1,55 @@
+# ~/.config/starship.toml
+
+# Which is equivalent to
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$package\
+$golang\
+$java\
+$python\
+$rust\
+$memory_usage\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
+[character]
+error_symbol = "[✖](bold red)"
+success_symbol = "[❯](bold blue)"
+vicmd_symbol = "[❮](bold yellow)"
+
+[cmd_duration]
+format = "[$duration](bold yellow)"
+min_time = 1000
+
+[battery]
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+full_symbol = "🔋 "
+
+[[battery.display]]
+style = "bold red"
+threshold = 20
+
+[git_status]
+conflicted = "🏳"
+deleted = "🗑"
+diverged = "😵"
+modified = "📝"
+staged = '[++\($count\)](green)'
+stashed = "📦"

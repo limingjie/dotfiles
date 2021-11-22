@@ -1,0 +1,47 @@
+# ~/.zshrc
+
+# starship
+eval "$(starship init zsh)"
+
+# zsh options
+bindkey -v
+setopt auto_cd
+setopt correct_all
+
+# autocompletion
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+
+# zsh-autocomplete
+# source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+# zsh-autosuggestions
+# source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# exa
+alias ls='exa -g'
+alias ll='exa -lag'
+alias la='exa -a'
+alias lsnew='exa -lagsnew'
+alias sl='/usr/local/bin/sl'
+
+# bat
+alias cat='bat'
+
+# rm
+if [ -f /usr/local/bin/trash ]; then alias rm="/usr/local/bin/trash"; fi
+
+# nvim
+alias vi=nvim
+alias vim=nvim
+
+# python
+alias python=/usr/local/bin/python3
+
+# FZF
+[ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
+
+# fasd
+eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
+alias v='f -e vim' # quick opening files with vim
