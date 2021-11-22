@@ -3,8 +3,10 @@
 # starship
 eval "$(starship init zsh)"
 
-# zsh options
+# VIM mode
 bindkey -v
+
+# zsh options
 setopt auto_cd
 setopt correct_all
 
@@ -29,8 +31,8 @@ alias sl='/usr/local/bin/sl'
 # bat
 alias cat='bat'
 
-# rm
-if [ -f /usr/local/bin/trash ]; then alias rm="/usr/local/bin/trash"; fi
+# Safe rm
+[ -f /usr/local/bin/trash ] && alias rm="/usr/local/bin/trash"
 
 # nvim
 alias vi=nvim
