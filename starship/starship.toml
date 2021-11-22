@@ -2,9 +2,6 @@
 
 # Which is equivalent to
 format = """
-$username\
-$hostname\
-$shlvl\
 $directory\
 $git_branch\
 $git_commit\
@@ -12,24 +9,15 @@ $git_state\
 $git_metrics\
 $git_status\
 $package\
-$golang\
-$java\
-$python\
-$rust\
-$memory_usage\
-$env_var\
-$custom\
 $cmd_duration\
 $time\
 $line_break\
 $jobs\
-$battery\
 $status\
-$shell\
 $character"""
 
 [character]
-error_symbol = "[✖](bold red)"
+# error_symbol = "[✖](bold red)"
 success_symbol = "[❯](bold blue)"
 vicmd_symbol = "[❮](bold yellow)"
 
@@ -43,33 +31,18 @@ truncate_to_repo = false
 truncation_length = 5
 truncation_symbol = "…/"
 
-[battery]
-charging_symbol = "⚡️ "
-discharging_symbol = "💀 "
-full_symbol = "🔋 "
-
-[[battery.display]]
-style = "bold red"
-threshold = 20
+[git_branch]
+format = "❯ [$symbol$branch]($style) "
+symbol = ""
 
 [git_status]
-conflicted = "🏳"
-deleted = "🗑"
-diverged = "😵"
-modified = "📝"
-staged = '[++\($count\)](green)'
-stashed = "📦"
+staged = '[+\($count\)](green)'
+
+[package]
+format = "❯ [$symbol$version]($style) "
 
 [status]
 disabled = false
-format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+format = '[ $symbol $common_meaning$signal_name$maybe_int ]($style) '
 map_symbol = true
-style = "bg:blue"
-symbol = "🔴"
-
-[time]
-disabled = false
-format = '🕙 [\[ $time \]]($style) '
-time_format = "%T"
-time_range = "-"
-utc_time_offset = "+8"
+style = "bg:red"
