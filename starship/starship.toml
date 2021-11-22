@@ -35,6 +35,9 @@ truncation_symbol = "…/"
 format = "❯ [$symbol$branch]($style) "
 symbol = ""
 
+[git_metrics]
+disabled = false
+
 [git_status]
 staged = '[+\($count\)](green)'
 
