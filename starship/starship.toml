@@ -1,6 +1,5 @@
 # ~/.config/starship.toml
 
-# Which is equivalent to
 format = """
 $directory\
 $git_branch\
@@ -9,9 +8,12 @@ $git_state\
 $git_metrics\
 $git_status\
 $package\
+$golang\
+🇨🇳\
 $fill\
 $cmd_duration\
 $status\
+$time\
 $line_break\
 $jobs\
 $character"""
@@ -20,7 +22,7 @@ $character"""
 symbol = " "
 
 [character]
-# error_symbol = "[✖](bold red)"
+error_symbol = "[✘](bold red)"
 success_symbol = "[❯](bold blue)"
 vicmd_symbol = "[❮](bold yellow)"
 
@@ -31,21 +33,36 @@ truncation_length = 5
 truncation_symbol = "…/"
 
 [git_branch]
-format = "[ $symbol$branch]($style) "
+format = "[$symbol$branch]($style) "
+
+[git_commit]
+commit_hash_length = 7
+only_detached = false
+tag_disabled = false
+tag_symbol = "🔖 "
 
 [git_metrics]
 disabled = false
 
 [git_status]
-staged = '[+\($count\)](green)'
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+staged = '+$count'
 
 [package]
-format = "[ $symbol$version]($style) "
+format = "[$symbol$version]($style) "
 
 [cmd_duration]
 format = "[ $duration ]($style)"
 min_time = 500
-style = "bg:yellow bold"
+style = "red bold"
+
+[time]
+disabled = false
+format = '[\[$time\]]($style)'
+time_format = "%T%.3f"
+utc_time_offset = "+8"
 
 [status]
 disabled = false
