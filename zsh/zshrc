@@ -11,16 +11,19 @@ setopt auto_cd
 setopt correct_all
 
 # zsh-autocomplete
-# Wait until this many characters have been typed, before showing completions.
-zstyle ':autocomplete:*' min-input 3 # int
+zstyle ':autocomplete:*' min-input 5   # int
+zstyle ':autocomplete:*' min-delay 0.5 # float
+zstyle ':autocomplete:*' widget-style menu-select
 source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # zsh-autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#8f8f8f"
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#8f8f8f"
 
 # zsh-syntax-highlighting
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
 # exa
 alias ls='exa -g'
