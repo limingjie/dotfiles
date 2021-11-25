@@ -26,10 +26,9 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
 
 # exa
-alias ls='exa -g'
-alias ll='exa -lag'
-alias la='exa -a'
-alias lsnew='exa -lagsnew'
+alias ls='exa -bgF'
+alias ll='exa -laabgF'
+alias la='exa -aaF'
 alias sl='/usr/local/bin/sl'
 
 # bat
@@ -50,4 +49,4 @@ alias python=/usr/local/bin/python3
 
 # fasd
 eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
-alias v='f -e vim' # quick opening files with vim
+alias v='f -e nvim' # quick opening files with vim

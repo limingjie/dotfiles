@@ -9,7 +9,8 @@ $git_metrics\
 $git_status\
 $package\
 $golang\
-🇨🇳\
+$java\
+$python\
 $fill\
 $cmd_duration\
 $status\
@@ -27,21 +28,26 @@ success_symbol = "[❯](bold blue)"
 vicmd_symbol = "[❮](bold yellow)"
 
 [directory]
-repo_root_style = "bold purple underline"
-truncate_to_repo = false
-truncation_length = 5
+repo_root_style = "blue underline"
+style = "blue"
+truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
-format = "[$symbol$branch]($style) "
+format = "[$symbol$branch]($style)"
+style = "purple"
 
 [git_commit]
 commit_hash_length = 7
+format = "[|$hash$tag]($style) "
 only_detached = false
+style = "cyan"
 tag_disabled = false
 tag_symbol = "🔖 "
 
 [git_metrics]
+added_style = "green"
+deleted_style = "red"
 disabled = false
 
 [git_status]
@@ -49,18 +55,34 @@ ahead = "⇡${count}"
 behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 staged = '+$count'
+style = "red"
 
 [package]
 format = "[$symbol$version]($style) "
+style = "208"
+
+[golang]
+format = "[$symbol($version )]($style)"
+style = "cyan"
+
+[java]
+format = "[${symbol}(${version} )]($style)"
+style = "red"
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+style = "yellow"
+symbol = "😺 "
 
 [cmd_duration]
 format = "[ $duration ]($style)"
 min_time = 500
-style = "red bold"
+style = "white bg:yellow"
 
 [time]
 disabled = false
-format = '[\[$time\]]($style)'
+format = '[ $time🇨🇳  ]($style)'
+style = "white bg:blue"
 time_format = "%T%.3f"
 utc_time_offset = "+8"
 
