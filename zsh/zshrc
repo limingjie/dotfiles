@@ -7,8 +7,17 @@ eval "$(starship init zsh)"
 bindkey -v
 
 # zsh options
-setopt auto_cd
-setopt correct_all
+setopt AUTO_CD
+setopt CORRECT_ALL
+setopt NO_CASE_GLOB # MacOS is case insensitive
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
 
 # zsh-autocomplete
 zstyle ':autocomplete:*' min-input 5   # int
