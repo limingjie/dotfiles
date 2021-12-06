@@ -1,7 +1,16 @@
 # ~/.zshrc
 
+# Download Znap, if it's not there yet.
+[[ -f ~/.config/zsh/zsh-snap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/.config/zsh/zsh-snap
+
+# Start Znap
+source ~/.config/zsh/zsh-snap/znap.zsh
+
 # starship
-eval "$(starship init zsh)"
+znap eval starship 'starship init zsh'
+znap prompt
 
 # VIM mode
 bindkey -v
@@ -23,39 +32,46 @@ setopt HIST_REDUCE_BLANKS
 zstyle ':autocomplete:*' min-input 5   # int
 zstyle ':autocomplete:*' min-delay 0.5 # float
 zstyle ':autocomplete:*' widget-style menu-select
-source ~/.config/zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+znap source marlonrichert/zsh-autocomplete
 
 # zsh-autosuggestions
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#8f8f8f"
+znap source zsh-users/zsh-autosuggestions
 
 # zsh-syntax-highlighting
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+typeset -A ZSH_HIGHLIGHT_PATTERNS
 ZSH_HIGHLIGHT_PATTERNS+=('rm -rf *' 'fg=white,bold,bg=red')
-
-# exa
-alias ls='exa -bgF'
-alias ll='exa -laabgF'
-alias la='exa -aaF'
-alias sl='/usr/local/bin/sl'
-
-# bat
-alias cat='bat'
-
-# Safe rm
-[ -f /usr/local/bin/trash ] && alias rm="/usr/local/bin/trash"
-
-# nvim
-alias vi=nvim
-alias vim=nvim
-
-# python
-alias python=/usr/local/bin/python3
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
+znap source zsh-users/zsh-syntax-highlighting
 
 # FZF
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
 # fasd
 eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
-alias v='f -e nvim' # quick opening files with vim
+
+# exa
+if command -v exa > /dev/null; then
+    alias ls='exa -bgF'
+    alias ll='exa -laabgF'
+    alias la='exa -aaF'
+fi
+
+# bat
+if command -v bat > /dev/null; then
+    alias cat=bat
+fi
+
+# Safe rm
+if command -v trash > /dev/null; then
+    alias rm=trash
+fi
+
+# nvim
+if command -v nvim > /dev/null; then
+    alias vi=nvim
+    alias vim=nvim
+fi
+
+# python
+alias python=python3
