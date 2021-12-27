@@ -8,6 +8,10 @@
 # Start Znap
 source ~/.config/zsh/zsh-snap/znap.zsh
 
+if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then
+    fortune -l | lolcat
+fi
+
 # starship
 znap eval starship 'starship init zsh'
 znap prompt
@@ -51,24 +55,24 @@ znap source zsh-users/zsh-syntax-highlighting
 eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
 
 # exa
-if command -v exa > /dev/null; then
+if (( $+commands[exa] )); then
     alias ls='exa -bgF'
     alias ll='exa -laabgF'
     alias la='exa -aaF'
 fi
 
 # bat
-if command -v bat > /dev/null; then
+if (( $+commands[bat] )); then
     alias cat=bat
 fi
 
 # Safe rm
-if command -v trash > /dev/null; then
+if (( $+commands[trash] )); then
     alias rm=trash
 fi
 
 # nvim
-if command -v nvim > /dev/null; then
+if (( $+commands[nvim] )); then
     alias vi=nvim
     alias vim=nvim
 fi
