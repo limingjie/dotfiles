@@ -79,3 +79,7 @@ fi
 
 # python
 alias python=python3
+
+path+=('/usr/local/texlive/2021/bin') # Tex
+path+=('/Users/mingjie/development/flutter/bin') # Flutter
+export PATH
