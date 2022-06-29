@@ -12,9 +12,11 @@ if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then
     fortune -l | lolcat
 fi
 
+# homebrew M1 path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # starship
-znap eval starship 'starship init zsh'
-znap prompt
+eval "$(starship init zsh)"
 
 # VIM mode
 bindkey -v
@@ -78,7 +80,9 @@ if (( $+commands[nvim] )); then
 fi
 
 # python
-alias python=python3
+if (( $+commands[python3] )); then
+    alias python=python3
+fi
 
 path+=('/usr/local/texlive/2021/bin') # Tex
 path+=('/Users/mingjie/development/flutter/bin') # Flutter
