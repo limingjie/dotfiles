@@ -18,7 +18,9 @@ if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then
 fi
 
 # starship
-eval "$(starship init zsh)"
+if (( $+commands[starship] )); then
+    eval "$(starship init zsh)"
+fi
 
 # VIM mode
 bindkey -v
@@ -56,7 +58,9 @@ znap source zsh-users/zsh-syntax-highlighting
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
 # fasd
-eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
+if (( $+commands[fasd] )); then
+    eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
+fi
 
 # exa
 if (( $+commands[exa] )); then
