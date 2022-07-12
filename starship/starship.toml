@@ -1,20 +1,26 @@
 # ~/.config/starship.toml
 
 format = """
+[](#9A348E)\
 $directory\
+[](fg:#9A348E bg:#DA627D )\
 $git_branch\
 $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+[](fg:#DA627D bg:#FC916D)\
 $package\
 $golang\
 $java\
 $python\
-$fill\
+[](fg:#FC916D bg:#86BBD8)\
 $cmd_duration\
+[](fg:#86BBD8 bg:#06969A)\
 $status\
+[](fg:#06969A bg:#33658A)\
 $time\
+[ ](fg:#33658A)\
 $line_break\
 $jobs\
 $character"""
@@ -30,66 +36,67 @@ success_symbol = "[❯](bold blue)"
 vicmd_symbol = "[❮](bold yellow)"
 
 [directory]
-repo_root_style = "blue underline"
-style = "blue"
+format = "[$path ]($style)"
+style = "bg:#9A348E"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
-format = "[$symbol$branch]($style)"
-style = "purple"
+format = '[ $symbol$branch]($style)'
+style = "bg:#DA627D"
 
 [git_commit]
 commit_hash_length = 7
-format = "[|$hash$tag]($style) "
+format = "[|$hash$tag ]($style)"
 only_detached = false
-style = "cyan"
+style = "bg:#DA627D"
 tag_disabled = false
 tag_symbol = "🔖 "
 
 [git_metrics]
-added_style = "green"
-deleted_style = "red"
+added_style = "bg:#DA627D"
+deleted_style = "bg:#DA627D"
 disabled = false
+format = '([+$added ]($added_style))([-$deleted ]($deleted_style))'
 
 [git_status]
 ahead = "⇡${count}"
 behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+format = '[($all_status$ahead_behind )]($style)'
 staged = '+$count'
-style = "red"
+style = "bg:#DA627D"
 
 [package]
-format = "[$symbol$version]($style) "
-style = "208"
+format = "[ $symbol($version )]($style)"
+style = "bg:#86BBD8"
 
 [golang]
-format = "[$symbol($version )]($style)"
-style = "cyan"
+format = "[ $symbol($version )]($style)"
+style = "bg:#FC916D"
 
 [java]
-format = "[${symbol}(${version} )]($style)"
-style = "red"
+format = "[ $symbol($version )]($style)"
+style = "bg:#FC916D"
 
 [python]
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
-style = "yellow"
-symbol = "😺 "
+format = '[ $symbol$pyenv_prefix($version )(\($virtualenv\) )]($style)'
+style = "bg:#FC916D"
 
 [cmd_duration]
 format = "[ $duration ]($style)"
 min_time = 500
-style = "white bg:yellow"
-
-[time]
-disabled = false
-format = '[ $time🇨🇳  ]($style)'
-style = "white bg:blue"
-time_format = "%T%.3f"
-utc_time_offset = "+8"
+style = "bg:#86BBD8"
 
 [status]
 disabled = false
 format = '[ $symbol $common_meaning$signal_name$maybe_int ]($style)'
 map_symbol = true
-style = "bg:red"
+style = "bg:#06969A"
+
+[time]
+disabled = false
+format = '[ ♥ $time ]($style)'
+style = "bg:#33658A"
+time_format = "%R" # Hour:Minute Format
+utc_time_offset = "+8"
