@@ -1,44 +1,41 @@
 #!/usr/bin/env zsh
-# Install dotfiles
-# Copyright (C) 2015 by Mingjie Li, <limingjie@outlook.com>
-# https://github.com/limingjie/dotfiles
+
+function relink() {
+  if [[ -L $2 ]]; then
+    echo "Remove existing link $2"
+    rm $2
+  fi
+
+  if [[ -e $2 ]]; then
+    echo "$2 is not a symbolic link."
+  else
+    echo "Recreate link        $2"
+    if [[ ! -d ${2:h} ]]; then
+      mkdir -p ${2:h}
+    fi
+    ln -s $1 $2
+  fi
+}
+
+function relink_sudo() {
+  if [[ -L $2 ]]; then
+    echo "Remove existing link $2"
+    sudo rm $2
+  fi
+
+  if [[ -e $2 ]]; then
+    echo "$2 is not a symbolic link."
+  else
+    echo "Recreate link        $2"
+    sudo ln -s $1 $2
+  fi
+}
 
 scriptpath=${0:a:h}
 dotfilesroot=${scriptpath:h}
 
-function install_ohmyzsh() {
-  if [[ ! -d ~/.oh-my-zsh ]]; then
-    echo "Installing oh-my-zsh..."
-    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-  fi
-}
-
-function install_dotfile() {
-  if [[ -f $1 ]]; then
-    if [[ -d $2 ]]; then
-      cp $1 $2
-      echo "Installed" $1 "to" $2
-    fi
-  fi
-}
-
-echo "Start installation..."
-
-# install oh-my-zsh
-install_ohmyzsh
-
-# install .zshrc
-install_dotfile ${dotfilesroot}/zsh/.zshrc ~/
-
-# install config.fish
-install_dotfile ${dotfilesroot}/fish/config.fish ~/.config/fish/
-
-# install .tmux.conf
-install_dotfile ${dotfilesroot}/tmux/.tmux.conf ~/
-
-# install vim plugin
-${scriptpath}/vimplugin.sh
-
-# install .vimrc
-install_dotfile ${dotfilesroot}/vim/.vimrc ~/
-
+relink_sudo ${dotfilesroot}/etc/zshenv              /etc/zshenv
+relink      ${dotfilesroot}/alacritty/alacritty.yml ~/.config/alacritty.yml
+relink      ${dotfilesroot}/starship/starship.toml  ~/.config/starship.toml
+relink      ${dotfilesroot}/zsh/zshrc               ~/.config/zsh/.zshrc
+relink      ${dotfilesroot}/nvim/init.vim           ~/.config/nvim/init.vim
