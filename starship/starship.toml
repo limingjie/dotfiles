@@ -11,11 +11,13 @@ $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+$git_state\
 [](fg:#DA627D bg:#FC916D)\
 $package\
+$c\
 $golang\
-$java\
 $python\
+$java\
 [](fg:#FC916D bg:#86BBD8)\
 $cmd_duration\
 [](fg:#86BBD8 bg:#06969A)\
@@ -43,6 +45,12 @@ style = "bg:#9A348E"
 truncation_length = 3
 truncation_symbol = "…/"
 
+[directory.substitutions]
+"Documents" = "★"
+"Downloads" = "⬇️"
+"Music" = "♪"
+"Pictures" = "☺"
+
 [git_branch]
 format = '[ $symbol$branch]($style)'
 style = "bg:#DA627D"
@@ -69,9 +77,17 @@ format = '[($all_status$ahead_behind )]($style)'
 staged = '+$count'
 style = "bg:#DA627D"
 
+[git_state]
+style = "bg:#DA627D"
+
 [package]
 format = "[ $symbol($version )]($style)"
-style = "bg:#86BBD8"
+style = "bg:#FC916D"
+
+[c]
+format = "[ $symbol(($name-)$version )]($style)"
+style = "bg:#FC916D"
+symbol = "ℂ "
 
 [golang]
 format = "[ $symbol($version )]($style)"
@@ -80,13 +96,15 @@ style = "bg:#FC916D"
 [java]
 format = "[ $symbol($version )]($style)"
 style = "bg:#FC916D"
+symbol = "ⅉ "
 
 [python]
 format = '[ $symbol$pyenv_prefix($version )(\($virtualenv\) )]($style)'
 style = "bg:#FC916D"
+symbol = "ℙℽ "
 
 [cmd_duration]
-format = "[ $duration ]($style)"
+format = "[ ⧗ $duration ]($style)"
 min_time = 500
 style = "bg:#86BBD8"
 
@@ -98,7 +116,7 @@ style = "bg:#06969A"
 
 [time]
 disabled = false
-format = '[ ♥ $time ]($style)'
+format = '[ ◷ $time ]($style)'
 style = "bg:#33658A"
 time_format = "%R" # Hour:Minute Format
 utc_time_offset = "+8"
