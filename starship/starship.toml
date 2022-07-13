@@ -23,7 +23,7 @@ $cmd_duration\
 [](fg:#86BBD8 bg:#06969A)\
 $status\
 [](fg:#06969A bg:#33658A)\
-$time\
+${custom.time}\
 [ ](fg:#33658A)\
 $line_break\
 $jobs\
@@ -43,13 +43,23 @@ vicmd_symbol = "[❮](bold yellow)"
 format = "[$path ]($style)"
 style = "bg:#9A348E"
 truncation_length = 3
-truncation_symbol = "…/"
+truncation_symbol = "⁑/"
 
 [directory.substitutions]
-"Documents" = "★"
+"Development" = "𝔻𝕖𝕧"
+"Documents" = "🮹🮺"
 "Downloads" = "⬇️"
-"Music" = "♪"
-"Pictures" = "☺"
+"Everbridge" = "𝔼𝔹"
+"Music" = "♫"
+"Pictures" = "★"
+"dotfiles" = "🞄"
+"etc" = "⚙"
+# Chars
+"J" = "𝕁"
+"M" = "�"
+"j" = "𝕛"
+"m" = "𝕞"
+"~" = "⚑"
 
 [git_branch]
 format = '[ $symbol$branch]($style)'
@@ -61,7 +71,7 @@ format = "[|$hash$tag ]($style)"
 only_detached = false
 style = "bg:#DA627D"
 tag_disabled = false
-tag_symbol = "🔖 "
+tag_symbol = "🅣 "
 
 [git_metrics]
 added_style = "bg:#DA627D"
@@ -73,9 +83,11 @@ format = '([+$added ]($added_style))([-$deleted ]($deleted_style))'
 ahead = "⇡${count}"
 behind = "⇣${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-format = '[($all_status$ahead_behind )]($style)'
+format = '[($all_status )($ahead_behind )]($style)'
+modified = "‼"
 staged = '+$count'
 style = "bg:#DA627D"
+untracked = "⁇"
 
 [git_state]
 style = "bg:#DA627D"
@@ -92,19 +104,20 @@ symbol = "ℂ "
 [golang]
 format = "[ $symbol($version )]($style)"
 style = "bg:#FC916D"
+symbol = "𝔾𝕠 "
 
 [java]
 format = "[ $symbol($version )]($style)"
 style = "bg:#FC916D"
-symbol = "ⅉ "
+symbol = "𝕁 "
 
 [python]
 format = '[ $symbol$pyenv_prefix($version )(\($virtualenv\) )]($style)'
 style = "bg:#FC916D"
-symbol = "ℙℽ "
+symbol = "ℙ𝕪 "
 
 [cmd_duration]
-format = "[ ⧗ $duration ]($style)"
+format = "[ ⚡ $duration ]($style)"
 min_time = 500
 style = "bg:#86BBD8"
 
@@ -116,7 +129,16 @@ style = "bg:#06969A"
 
 [time]
 disabled = false
-format = '[ ◷ $time ]($style)'
+format = '[ 🯆🯉 $time ]($style)'
 style = "bg:#33658A"
 time_format = "%R" # Hour:Minute Format
 utc_time_offset = "+8"
+
+[custom.time]
+# command = "date +'%I∶%M %p' | sed 's/0/🯰/g; s/1/🯱/g; s/2/🯲/g; s/3/🯳/g; s/4/🯴/g; s/5/🯵/g; s/6/🯶/g; s/7/🯷/g; s/8/🯸/g; s/9/🯹/g; s/AM/𝔸/gi; s/PM/ℙ/gi' "
+# command = "date +'%I∶%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/𝟠/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
+command = "date +'%I⦂%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/⧖/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
+format = '[ $symbol$output ]($style)'
+style = "bg:#33658A"
+symbol = " "
+when = true
