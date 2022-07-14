@@ -1,7 +1,5 @@
 # ~/.config/starship.toml
 
-#
-
 format = """
 [](fg:#9A348E)\
 $directory\
@@ -52,13 +50,48 @@ truncation_symbol = "⁑/"
 "Everbridge" = "𝔼𝔹"
 "Music" = "♫"
 "Pictures" = "★"
-"dotfiles" = "🞄"
+"dotfiles" = "🞄🅕"
 "etc" = "⚙"
-# Chars
+# Single Characters
+" " = "␣"
+"0" = "𝟘"
+"1" = "𝟙"
+"2" = "𝟚"
+"3" = "𝟛"
+"4" = "𝟜"
+"5" = "𝟝"
+"6" = "𝟞"
+"7" = "𝟟"
+"8" = "𝟠"
+"9" = "𝟡"
+":" = "⦂"
+";" = "⨟"
+"A" = "𝔸"
+"B" = "𝔹"
+"C" = "ℂ"
+"D" = "𝔻"
+"E" = "𝔼"
+"F" = "𝔽"
+"G" = "𝔾"
+"H" = "ℍ"
+"I" = "𝕀"
 "J" = "𝕁"
-"M" = "�"
-"j" = "𝕛"
-"m" = "𝕞"
+"K" = "𝕂"
+"L" = "𝕃"
+"M" = "𝕄"
+"N" = "ℕ"
+"O" = "𝕆"
+"P" = "ℙ"
+"Q" = "ℚ"
+"R" = "ℝ"
+"S" = "𝕊"
+"T" = "𝕋"
+"U" = "𝕌"
+"V" = "𝕍"
+"W" = "𝕎"
+"X" = "𝕏"
+"Y" = "𝕐"
+"Z" = "ℤ"
 "~" = "⚑"
 
 [git_branch]
@@ -117,7 +150,7 @@ style = "bg:#FC916D"
 symbol = "ℙ𝕪 "
 
 [cmd_duration]
-format = "[ ⚡ $duration ]($style)"
+format = "[ took $duration ]($style)"
 min_time = 500
 style = "bg:#86BBD8"
 
@@ -127,17 +160,19 @@ format = '[ $symbol $common_meaning$signal_name$maybe_int ]($style)'
 map_symbol = true
 style = "bg:#06969A"
 
-[time]
-disabled = false
-format = '[ 🯆🯉 $time ]($style)'
-style = "bg:#33658A"
-time_format = "%R" # Hour:Minute Format
-utc_time_offset = "+8"
+# [time]
+# disabled = false
+# format = '[ 🯆🯉 $time ]($style)'
+# style = "bg:#33658A"
+# time_format = "%R" # Hour:Minute AM/PM Format
+# utc_time_offset = "+8"
 
 [custom.time]
-# command = "date +'%I∶%M %p' | sed 's/0/🯰/g; s/1/🯱/g; s/2/🯲/g; s/3/🯳/g; s/4/🯴/g; s/5/🯵/g; s/6/🯶/g; s/7/🯷/g; s/8/🯸/g; s/9/🯹/g; s/AM/𝔸/gi; s/PM/ℙ/gi' "
+# command = "date +'%I∶%M %p' | sed 's/0/🯰/g; s/1/🯱/g; s/2/🯲/g; s/3/🯳/g; s/4/🯴/g; s/5/🯵/g; s/6/🯶/g; s/7/🯷/g; s/8/🯸/g; s/9/🯹/g; s/AM/㏂/gi; s/PM/㏘/gi' "
 # command = "date +'%I∶%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/𝟠/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
-command = "date +'%I⦂%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/⧖/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
+# command = "date +'%I⦂%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/⧖/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
+# shell substitution is a bit faster than sed for this command.
+command = "echo ${${${${${${${${${${${${$(date +'%I⦂%M %p')//0/𝟘}//1/𝟙}//2/𝟚}//3/𝟛}//4/𝟜}//5/𝟝}//6/𝟞}//7/𝟟}//8/⧖}//9/𝟡s}//AM/𝔸𝕄}//PM/ℙ𝕄}"
 format = '[ $symbol$output ]($style)'
 style = "bg:#33658A"
 symbol = " "
