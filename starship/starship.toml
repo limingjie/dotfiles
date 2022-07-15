@@ -1,28 +1,28 @@
 # ~/.config/starship.toml
 
 format = """
-[](fg:#9A348E)\
+[](fg:#33658A)\
 $directory\
-[](fg:#9A348E bg:#DA627D)\
+[](fg:#33658A bg:#06969A)\
 $git_branch\
 $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
 $git_state\
-[](fg:#DA627D bg:#FC916D)\
+[](fg:#06969A bg:#86BBD8)\
 $package\
 $c\
 $golang\
 $python\
 $java\
-[](fg:#FC916D bg:#86BBD8)\
+[](fg:#86BBD8 bg:#FC916D)\
 $cmd_duration\
-[](fg:#86BBD8 bg:#06969A)\
+[](fg:#FC916D bg:#DA627D)\
 $status\
-[](fg:#06969A bg:#33658A)\
+[](fg:#DA627D bg:#9A348E)\
 ${custom.time}\
-[ ](fg:#33658A)\
+[ ](fg:#9A348E)\
 $line_break\
 $jobs\
 $character"""
@@ -39,7 +39,7 @@ vicmd_symbol = "[❮](bold yellow)"
 
 [directory]
 format = "[$path ]($style)"
-style = "bg:#9A348E"
+style = "bg:#33658A bold underline"
 truncation_length = 3
 truncation_symbol = "⁑/"
 
@@ -50,10 +50,13 @@ truncation_symbol = "⁑/"
 "Everbridge" = "𝔼𝔹"
 "Music" = "♫"
 "Pictures" = "★"
-"dotfiles" = "🞄🅕"
+"dotfiles" = ".𝕗𝕚𝕝𝕖𝕤"
 "etc" = "⚙"
 # Single Characters
 " " = "␣"
+"~" = "⚑"
+# Blackboard bold
+# https://en.wikipedia.org/wiki/Blackboard_bold
 "0" = "𝟘"
 "1" = "𝟙"
 "2" = "𝟚"
@@ -92,23 +95,22 @@ truncation_symbol = "⁑/"
 "X" = "𝕏"
 "Y" = "𝕐"
 "Z" = "ℤ"
-"~" = "⚑"
 
 [git_branch]
 format = '[ $symbol$branch]($style)'
-style = "bg:#DA627D"
+style = "bg:#06969A bold"
 
 [git_commit]
 commit_hash_length = 7
-format = "[|$hash$tag ]($style)"
+format = "[|$hash(|$tag) ]($style)"
 only_detached = false
-style = "bg:#DA627D"
+style = "bg:#06969A fg:green bold"
 tag_disabled = false
-tag_symbol = "🅣 "
+tag_symbol = ""
 
 [git_metrics]
-added_style = "bg:#DA627D"
-deleted_style = "bg:#DA627D"
+added_style = "bg:#06969A bold"
+deleted_style = "bg:#06969A bold"
 disabled = false
 format = '([+$added ]($added_style))([-$deleted ]($deleted_style))'
 
@@ -119,51 +121,51 @@ diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 format = '[($all_status )($ahead_behind )]($style)'
 modified = "‼"
 staged = '+$count'
-style = "bg:#DA627D"
+style = "bg:#06969A bold"
 untracked = "⁇"
 
 [git_state]
-style = "bg:#DA627D"
+style = "bg:#06969A bold"
 
 [package]
 format = "[ $symbol($version )]($style)"
-style = "bg:#FC916D"
+style = "bg:#86BBD8 bold"
 
 [c]
 format = "[ $symbol(($name-)$version )]($style)"
-style = "bg:#FC916D"
+style = "bg:#86BBD8 bold"
 symbol = "ℂ "
 
 [golang]
 format = "[ $symbol($version )]($style)"
-style = "bg:#FC916D"
+style = "bg:#86BBD8 bold"
 symbol = "𝔾𝕠 "
 
 [java]
 format = "[ $symbol($version )]($style)"
-style = "bg:#FC916D"
-symbol = "𝕁 "
+style = "bg:#86BBD8 bold"
+symbol = "𝕁𝕒𝕧𝕒 "
 
 [python]
 format = '[ $symbol$pyenv_prefix($version )(\($virtualenv\) )]($style)'
-style = "bg:#FC916D"
+style = "bg:#86BBD8 bold"
 symbol = "ℙ𝕪 "
 
 [cmd_duration]
-format = "[ took $duration ]($style)"
+format = "[ ⏳ $duration ]($style)"
 min_time = 500
-style = "bg:#86BBD8"
+style = "bg:#FC916D bold"
 
 [status]
 disabled = false
 format = '[ $symbol $common_meaning$signal_name$maybe_int ]($style)'
 map_symbol = true
-style = "bg:#06969A"
+style = "bg:#DA627D bold"
 
 # [time]
 # disabled = false
 # format = '[ 🯆🯉 $time ]($style)'
-# style = "bg:#33658A"
+# style = "bg:#9A348E"
 # time_format = "%R" # Hour:Minute AM/PM Format
 # utc_time_offset = "+8"
 
@@ -174,6 +176,6 @@ style = "bg:#06969A"
 # shell substitution is a bit faster than sed for this command.
 command = "echo ${${${${${${${${${${${${$(date +'%I⦂%M %p')//0/𝟘}//1/𝟙}//2/𝟚}//3/𝟛}//4/𝟜}//5/𝟝}//6/𝟞}//7/𝟟}//8/⧖}//9/𝟡s}//AM/𝔸𝕄}//PM/ℙ𝕄}"
 format = '[ $symbol$output ]($style)'
-style = "bg:#33658A"
-symbol = " "
+style = "bg:#9A348E bold"
+symbol = "🕙 "
 when = true
