@@ -61,7 +61,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: buttonless
+  decorations: transparent
 
   # Background opacity
   #
@@ -162,7 +162,7 @@ font:
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
-  #  x: 0
+    #  x: 0
     y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -421,7 +421,6 @@ cursor:
   #thickness: 0.15
 # Live config reload (changes require restart)
 live_config_reload: true
-
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g.

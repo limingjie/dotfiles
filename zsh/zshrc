@@ -90,8 +90,15 @@ if (( $+commands[python3] )); then
     alias python=python3
 fi
 
-path+=('/usr/local/texlive/2021/bin') # Tex
-path+=('/Users/mingjie/development/flutter/bin') # Flutter
-path+=('/usr/local/sbin') # sbin
-path+=('/usr/local/opt/binutils/bin') # Binutils
+path+=('/usr/local/texlive/2021/bin')                  # Tex
+path+=('/Users/mingjie/development/flutter/bin')       # Flutter
+path+=('/usr/local/sbin')                              # sbin
+
+if [[ $(uname -m) == 'arm64' ]]; then
+    path+=('/opt/homebrew/opt/binutils/bin')           # binutils on macOS arm64
+    path+=('/opt/homebrew/opt/openjdk/bin')            # OpenJDK
+else
+    path+=('/usr/local/opt/binutils/bin')              # binutils on macOS amd64
+fi
+
 export PATH
