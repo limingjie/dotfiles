@@ -64,8 +64,8 @@ fi
 
 # exa
 if (( $+commands[exa] )); then
-    alias ls='exa -bgF'
-    alias ll='exa -laabgF'
+    alias ls='exa -bgGF'
+    alias ll='exa -laabgGF'
     alias la='exa -aaF'
 fi
 
@@ -98,7 +98,7 @@ if [[ $(uname -m) == 'arm64' ]]; then
     path+=('/opt/homebrew/opt/binutils/bin')           # binutils on macOS arm64
     path+=('/opt/homebrew/opt/openjdk/bin')            # OpenJDK
 else
-    path+=('/usr/local/opt/binutils/bin')              # binutils on macOS amd64
+    path+=('/usr/local/opt/binutils/bin')              # binutils on macOS x86_64
 fi
 
 export PATH
