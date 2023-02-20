@@ -90,6 +90,9 @@ if (( $+commands[python3] )); then
     alias python=python3
 fi
 
+# alias for proxy
+alias proxy='export http_proxy=http://127.0.0.1:4780;export https_proxy=http://127.0.0.1:4780;'
+
 path+=('/usr/local/texlive/2021/bin')                  # Tex
 path+=('/Users/mingjie/development/flutter/bin')       # Flutter
 path+=('/usr/local/sbin')                              # sbin
@@ -100,5 +103,3 @@ if [[ $(uname -m) == 'arm64' ]]; then
 else
     path+=('/usr/local/opt/binutils/bin')              # binutils on macOS x86_64
 fi
-
-export PATH
