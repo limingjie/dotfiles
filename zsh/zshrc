@@ -64,9 +64,10 @@ fi
 
 # exa
 if (( $+commands[exa] )); then
-    alias ls='exa -bgGF'
-    alias ll='exa -laabgGF'
-    alias la='exa -aaF'
+    alias ls='exa --binary --classify --sort=Filename'
+    alias ll='exa --all --all --binary --classify --color-scale --group --long --sort=Filename'
+    alias llg='exa --all --all --binary --classify --color-scale --grid --group --long --sort=Filename'
+    alias la='exa --all --all --classify --sort=Filename'
 fi
 
 # bat
