@@ -1,0 +1,82 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab_template name="strider_tab" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="Vertical" {
+            pane size="20%" {
+                plugin location="zellij:strider"
+            }
+            children
+        }
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab_template name="no_status_tab" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        children
+    }
+    tab name="Workspace" focus=true {
+        pane split_direction="vertical" {
+            pane name="Lorem"
+            pane name="Ipsum"
+        }
+    }
+    tab name="Code" cwd="/Users/mingjie/Everbridge" split_direction="vertical" {
+        pane name="Code"
+        pane name="Pull All Repos" start_suspended=true {
+            command "zsh"
+            args "-c" "/Users/mingjie/Documents/Scripts/pullall.sh"
+        }
+    }
+    no_status_tab name="Monitor" {
+        pane command="btm" borderless=true start_suspended=true
+    }
+    tab name="Homebrew" split_direction="vertical" {
+        pane name="Coffee"
+        pane name="Machine" start_suspended=true {
+            command "zsh"
+            args "-c" "echo 'homebrew updating...'; brew update; echo 'homebrew upgrading...'; brew upgrade; echo 'Done!'; "
+        }
+    }
+    no_status_tab name="♫" {
+        pane borderless=true {
+            command "musikcube"
+        }
+    }
+    no_status_tab name="Zen" {
+        pane split_direction="vertical" {
+            pane name="Fortune" {
+                command "zsh"
+                args "-c" "if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then while true; do clear; fortune -l | lolcat; sleep 10; done; fi"
+            }
+            pane split_direction="horizontal" size=36 {
+                pane command="cmatrix" borderless=true {
+                    args "-b"
+                }
+                pane size=7 borderless=true {
+                    command "zsh"
+                    args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; sleep 2; done"
+                }
+            }
+        }
+    }
+    no_status_tab name="Browser" {
+        pane borderless=true start_suspended=true {
+            command "browsh"
+            args "--startup-url" "google.com/search?q=test"
+        }
+    }
+}
