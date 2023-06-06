@@ -13,9 +13,9 @@ if [[ -f /opt/homebrew/bin/brew ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then
-    fortune -l | lolcat
-fi
+# if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then
+#     fortune -l | lolcat
+# fi
 
 # starship
 if (( $+commands[starship] )); then
@@ -57,10 +57,15 @@ znap source zsh-users/zsh-syntax-highlighting
 # FZF
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
-# fasd
-if (( $+commands[fasd] )); then
-    eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
+# zoxide is a smarter cd command, inspired by z and autojump.
+if (( $+commands[zoxide] )); then
+    eval "$(zoxide init zsh)"
 fi
+
+# # fasd
+# if (( $+commands[fasd] )); then
+#     eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
+# fi
 
 # exa
 if (( $+commands[exa] )); then
@@ -89,6 +94,13 @@ fi
 # python
 if (( $+commands[python3] )); then
     alias python=python3
+fi
+
+# yt-dlp
+if (( $+commands[yt-dlp] )); then
+    alias yt='noglob yt-dlp --embed-thumbnail --embed-metadata -N 5 -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
+    alias yt720='noglob yt-dlp --embed-thumbnail --embed-metadata -N 5 -f "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4] / bv*+ba/b"'
+    alias yta='noglob yt-dlp --embed-thumbnail --embed-metadata -f "ba[ext=m4a]/ba"'
 fi
 
 # alias for proxy
