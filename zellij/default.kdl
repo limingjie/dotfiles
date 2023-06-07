@@ -92,3 +92,10 @@ layout {
         }
     }
 }
+
+keybinds {
+    shared_except "locked" {
+        bind "Alt ," { GoToPreviousTab; }
+        bind "Alt ." { GoToNextTab; }
+    }
+}
