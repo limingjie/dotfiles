@@ -34,26 +34,44 @@ layout {
             pane name="Ipsum"
         }
     }
+    no_status_tab name="♫" {
+        pane borderless=true {
+            command "musikcube"
+        }
+    }
     tab name="Code" cwd="/Users/mingjie/Everbridge" split_direction="vertical" {
-        pane name="Code"
-        pane name="Pull All Repos" start_suspended=true {
+        pane name="Tangled"
+        pane name="Spaghetti"
+        floating_panes {
+            pane name="Pull All Repos" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
+                command "zsh"
+                args "-c" "/Users/mingjie/Documents/Scripts/pullall.sh; zsh"
+            }
+        }
+    }
+    no_status_tab name="Time" {
+        pane borderless=true{
             command "zsh"
-            args "-c" "/Users/mingjie/Documents/Scripts/pullall.sh"
+            args "-c" "LC_ALL=C peaclock"
         }
     }
     no_status_tab name="Monitor" {
         pane command="btm" borderless=true start_suspended=true
     }
     tab name="Homebrew" split_direction="vertical" {
-        pane name="Coffee"
-        pane name="Machine" start_suspended=true {
-            command "zsh"
-            args "-c" "echo 'homebrew updating...'; brew update; echo 'homebrew upgrading...'; brew upgrade; echo 'Done!'; "
+        pane name="Latte"
+        pane name="Mocha"
+        floating_panes {
+            pane name="Espresso" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
+                command "zsh"
+                args "-c" "echo 'homebrew updating...'; brew update; echo 'homebrew upgrading...'; brew upgrade; echo 'Done!'; zsh"
+            }
         }
     }
-    no_status_tab name="♫" {
-        pane borderless=true {
-            command "musikcube"
+    no_status_tab name="Browser" {
+        pane borderless=true start_suspended=true {
+            command "browsh"
+            args "--startup-url" "google.com/search?q=test"
         }
     }
     no_status_tab name="Zen" {
@@ -71,12 +89,6 @@ layout {
                     args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; sleep 2; done"
                 }
             }
-        }
-    }
-    no_status_tab name="Browser" {
-        pane borderless=true start_suspended=true {
-            command "browsh"
-            args "--startup-url" "google.com/search?q=test"
         }
     }
 }
