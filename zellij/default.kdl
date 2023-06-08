@@ -44,6 +44,7 @@ layout {
         pane name="Spaghetti"
         floating_panes {
             pane name="Pull All Repos" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
+                cwd "/Users/mingjie/Everbridge"
                 command "zsh"
                 args "-c" "/Users/mingjie/Documents/Scripts/pullall.sh; zsh"
             }
