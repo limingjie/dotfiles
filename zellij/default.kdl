@@ -34,31 +34,28 @@ layout {
             pane name="Ipsum"
         }
     }
+    tab name="Code" cwd="/Users/mingjie.li/Everbridge" split_direction="vertical" {
+        pane name="Tangled"
+        pane name="Spaghetti"
+        floating_panes {
+            pane name="Pull All Repos" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
+                cwd "/Users/mingjie.li/Everbridge"
+                command "zsh"
+                args "-c" "/Users/mingjie.li/Documents/Scripts/pullall.sh; zsh"
+            }
+        }
+    }
     no_status_tab name="♫" {
         pane borderless=true {
             command "musikcube"
         }
     }
-    tab name="Code" cwd="/Users/mingjie/Everbridge" split_direction="vertical" {
-        pane name="Tangled"
-        pane name="Spaghetti"
-        floating_panes {
-            pane name="Pull All Repos" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
-                cwd "/Users/mingjie/Everbridge"
-                command "zsh"
-                args "-c" "/Users/mingjie/Documents/Scripts/pullall.sh; zsh"
-            }
-        }
-    }
-    no_status_tab name="Time" {
-        pane borderless=true{
-            command "zsh"
-            args "-c" "LC_ALL=C peaclock"
-        }
-    }
-    no_status_tab name="Monitor" {
-        pane command="btm" borderless=true start_suspended=true
-    }
+    // no_status_tab name="Time" {
+    //     pane borderless=true{
+    //         command "zsh"
+    //         args "-c" "LC_ALL=C peaclock"
+    //     }
+    // }
     tab name="Homebrew" split_direction="vertical" {
         pane name="Latte"
         pane name="Mocha"
@@ -69,29 +66,26 @@ layout {
             }
         }
     }
-    no_status_tab name="Browser" {
-        pane borderless=true start_suspended=true {
-            command "browsh"
-            args "--startup-url" "google.com/search?q=test"
-        }
+    no_status_tab name="Monitor" {
+        pane command="btm" borderless=true start_suspended=true
     }
-    no_status_tab name="Zen" {
-        pane split_direction="vertical" {
-            pane name="Fortune" {
-                command "zsh"
-                args "-c" "if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then while true; do clear; fortune -l | lolcat; sleep 10; done; fi"
-            }
-            pane split_direction="horizontal" size=36 {
-                pane command="cmatrix" borderless=true {
-                    args "-b"
-                }
-                pane size=7 borderless=true {
-                    command "zsh"
-                    args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; sleep 2; done"
-                }
-            }
-        }
-    }
+    // no_status_tab name="Zen" {
+    //     pane split_direction="vertical" {
+    //         pane name="Fortune" {
+    //             command "zsh"
+    //             args "-c" "if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then while true; do clear; fortune -l | lolcat; sleep 10; done; fi"
+    //         }
+    //         pane split_direction="horizontal" size=36 {
+    //             pane command="cmatrix" borderless=true {
+    //                 args "-b"
+    //             }
+    //             pane size=7 borderless=true {
+    //                 command "zsh"
+    //                 args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; sleep 2; done"
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 keybinds {
