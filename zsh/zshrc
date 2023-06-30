@@ -116,3 +116,8 @@ if [[ $(uname -m) == 'arm64' ]]; then
 else
     path+=('/usr/local/opt/binutils/bin')              # binutils on macOS x86_64
 fi
+
+# Use the command in `brew info java` to make the system find the JDK.
+# For the system Java wrappers to find this JDK, symlink it with
+# sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+export JAVA_HOME=$(/usr/libexec/java_home)
