@@ -88,6 +88,15 @@ layout {
     // }
 }
 
+scroll_buffer_size 99999
+
+ui {
+    pane_frames {
+        rounded_corners true
+        hide_session_name true
+    }
+}
+
 keybinds {
     shared_except "locked" {
         bind "Alt ," { GoToPreviousTab; }
