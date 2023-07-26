@@ -34,7 +34,12 @@ function relink_sudo() {
 scriptpath=${0:a:h}
 dotfilesroot=${scriptpath:h}
 
-relink_sudo ${dotfilesroot}/etc/zshenv              /etc/zshenv
+if [[ $(uname) == "Darwin" ]]; then
+  relink_sudo ${dotfilesroot}/etc/zshenv            /etc/zshenv
+else
+  relink_sudo ${dotfilesroot}/etc/zshenv            /etc/zsh/zshenv
+fi
+
 relink      ${dotfilesroot}/alacritty/alacritty.yml ~/.config/alacritty.yml
 relink      ${dotfilesroot}/starship/starship.toml  ~/.config/starship.toml
 relink      ${dotfilesroot}/zsh/zshrc               ~/.config/zsh/.zshrc
