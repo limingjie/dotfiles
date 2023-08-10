@@ -60,17 +60,15 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 znap source zsh-users/zsh-syntax-highlighting
 
 # FZF
+# $ brew info fzf
+# To install useful keybindings and fuzzy completion:
+#   /opt/homebrew/opt/fzf/install
 [ -f ~/.config/fzf/.fzf.zsh ] && source ~/.config/fzf/.fzf.zsh
 
 # zoxide is a smarter cd command, inspired by z and autojump.
 if (( $+commands[zoxide] )); then
     eval "$(zoxide init zsh)"
 fi
-
-# # fasd
-# if (( $+commands[fasd] )); then
-#     eval "$(fasd --init posix-alias zsh-hook zsh-wcomp)"
-# fi
 
 # exa
 if (( $+commands[exa] )); then
