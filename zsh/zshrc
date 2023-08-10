@@ -24,6 +24,8 @@ fi
 
 # VIM mode
 bindkey -v
+# Keep `Ctrl+R` to open history
+bindkey "^r" history-incremental-search-backward
 
 # zsh options
 setopt AUTO_CD
