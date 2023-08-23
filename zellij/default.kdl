@@ -62,7 +62,7 @@ layout {
         floating_panes {
             pane name="Espresso" start_suspended=true x="15%" y="15%" width="70%" height="70%" {
                 command "zsh"
-                args "-c" "echo 'homebrew updating...'; brew update; echo 'homebrew upgrading...'; brew upgrade; echo 'Done!'; zsh"
+                args "-c" "echo 'homebrew updating...'; brew update; echo 'homebrew upgrading...'; brew upgrade; brew upgrade --cask --greedy; echo 'Done!'; zsh"
             }
         }
     }
