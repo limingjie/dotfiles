@@ -1,0 +1,115 @@
+[buildPlans.iosevka-curly-custom]
+export-glyph-names = true
+family = "Iosevka Curly Custom"
+no-cv-ss = false
+serifs = "sans"
+spacing = "normal"
+
+[buildPlans.iosevka-curly-custom.variants]
+inherits = "ss20"
+
+[buildPlans.iosevka-curly-custom.variants.design]
+a = "single-storey-serifless"
+asterisk = "turn-hex-low"
+at = "fourfold-tall"
+capital-b = "more-asymmetric-interrupted-bilateral-serifed"
+capital-d = "standard-bilateral-serifed"
+capital-f = "top-left-serifed"
+capital-g = "toothless-rounded-serifless-hooked"
+capital-i = "short-serifed"
+capital-j = "descending-serifed-both-sides"
+capital-m = "slanted-sides-flat-bottom-serifless"
+capital-p = "open-motion-serifed"
+capital-q = "crossing"
+capital-r = "curly-open-motion-serifed"
+capital-z = "curly-serifless-with-crossbar"
+dollar = "interrupted"
+eight = "crossing-asymmetric"
+eszet = "sulzbacher-tailed"
+f = "flat-hook-tailed"
+five = "oblique-upper-left-bar"
+g = "single-storey-flat-hook-serifless"
+i = "serifed-flat-tailed"
+j = "flat-hook-serifed"
+l = "serifed-flat-tailed"
+lig-ltgteq = "slanted"
+lig-neq = "more-slanted"
+micro-sign = "tailed"
+number-sign = "upright-tall"
+one = "base"
+paren = "large-contour"
+percent = "rings-continuous-slash-also-connected"
+pilcrow = "low"
+r = "corner-hooked-serifless"
+seven = "curly-serifed"
+t = "flat-hook"
+three = "flat-top"
+two = "straight-neck"
+v = "cursive-serifless"
+y = "curly-turn-serifless"
+z = "curly-serifless-with-crossbar"
+zero = "slashed-cutout"
+
+# Only build Normal width
+[buildPlans.iosevka-curly-custom.widths.normal]
+css = "normal" # "font-stretch' property of webfont CSS.
+menu = 5 # Width grade for the font's names.
+shape = 500 # Unit Width, measured in 1/1000 em.
+
+[buildPlans.iosevka-term-curly-custom]
+export-glyph-names = true
+family = "Iosevka Term Curly Custom"
+no-cv-ss = false
+serifs = "sans"
+spacing = "term"
+
+[buildPlans.iosevka-term-curly-custom.variants]
+inherits = "ss20"
+
+[buildPlans.iosevka-term-curly-custom.variants.design]
+a = "single-storey-serifless"
+asterisk = "turn-hex-low"
+at = "fourfold-tall"
+capital-b = "more-asymmetric-interrupted-bilateral-serifed"
+capital-d = "standard-bilateral-serifed"
+capital-f = "top-left-serifed"
+capital-g = "toothless-rounded-serifless-hooked"
+capital-i = "short-serifed"
+capital-j = "descending-serifed-both-sides"
+capital-m = "slanted-sides-flat-bottom-serifless"
+capital-p = "open-motion-serifed"
+capital-q = "crossing"
+capital-r = "curly-open-motion-serifed"
+capital-z = "curly-serifless-with-crossbar"
+dollar = "interrupted"
+eight = "crossing-asymmetric"
+eszet = "sulzbacher-tailed"
+f = "flat-hook-tailed"
+five = "oblique-upper-left-bar"
+g = "single-storey-flat-hook-serifless"
+i = "serifed-flat-tailed"
+j = "flat-hook-serifed"
+l = "serifed-flat-tailed"
+lig-ltgteq = "slanted"
+lig-neq = "more-slanted"
+micro-sign = "tailed"
+number-sign = "upright-tall"
+one = "base"
+paren = "large-contour"
+percent = "rings-continuous-slash-also-connected"
+pilcrow = "low"
+r = "corner-hooked-serifless"
+seven = "curly-serifed"
+t = "flat-hook"
+three = "flat-top"
+two = "straight-neck"
+v = "cursive-serifless"
+y = "curly-turn-serifless"
+z = "curly-serifless-with-crossbar"
+zero = "slashed-cutout"
+
+# Only build Normal width
+[buildPlans.iosevka-term-curly-custom.widths.normal]
+css = "normal" # "font-stretch' property of webfont CSS.
+menu = 5 # Width grade for the font's names.
+shape = 500 # Unit Width, measured in 1/1000 em.
