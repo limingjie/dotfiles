@@ -73,12 +73,12 @@ if (( $+commands[zoxide] )); then
     eval "$(zoxide init zsh)"
 fi
 
-# exa
-if (( $+commands[exa] )); then
-    alias ls='exa --binary --classify --sort=Filename'
-    alias ll='exa --all --all --binary --classify --color-scale --group --long --sort=Filename'
-    alias llg='exa --all --all --binary --classify --color-scale --grid --group --long --sort=Filename'
-    alias la='exa --all --all --classify --sort=Filename'
+# eza
+if (( $+commands[eza] )); then
+    alias ls='eza --binary --classify --sort=Filename --icons'
+    alias ll='eza --all --all --binary --classify --color-scale --group --long --sort=Filename --icons'
+    alias llg='eza --all --all --binary --classify --color-scale --grid --group --long --sort=Filename --icons'
+    alias la='eza --all --all --classify --sort=Filename --icons'
 fi
 
 # bat
@@ -131,3 +131,5 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # rust
 # Cargo's bin directory ($HOME/.cargo/bin)
 path=($HOME/.cargo/bin $path)
+
+export PATH="/usr/local/opt/ruby/bin:$PATH"
