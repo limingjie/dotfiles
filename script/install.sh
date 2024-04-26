@@ -45,4 +45,5 @@ relink      ${dotfilesroot}/starship/starship.toml  ~/.config/starship.toml
 relink      ${dotfilesroot}/zsh/zshrc               ~/.config/zsh/.zshrc
 relink      ${dotfilesroot}/nvim/init.vim           ~/.config/nvim/init.vim
 relink      ${dotfilesroot}/kitty/kitty.conf        ~/.config/kitty/kitty.conf
+relink      ${dotfilesroot}/kitty/theme.conf        ~/.config/kitty/theme.conf
 relink      ${dotfilesroot}/zellij/default.kdl      ~/.config/zellij/layouts/default.kdl
