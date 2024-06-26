@@ -1,30 +1,74 @@
 layout {
     default_tab_template {
+        // pane size=1 borderless=true {
+        //     plugin location="zellij:tab-bar"
+        // }
         pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
+            plugin location="file:/Users/mingjie.li/Downloads/zjstatus.wasm" {
+                format_left  "#[fg=#33658A,bg=#000000]#[fg=white,bg=#33658A,bold] ℤ #[fg=#33658A,bg=#000000]{tabs}"
+                format_right "#[fg=#000000,bg=#9A348E]{datetime}"
+                format_space ""
+
+                hide_frame_for_single_pane "true"
+
+                mode_normal  "#[bg=blue] "
+
+                tab_normal              "#[fg=#000000,bg=#4C4C59] {name} #[fg=#4C4C59,bg=#000000]"
+                tab_normal_fullscreen   "#[fg=#6C7086,bg=#000000] {name} [] "
+                tab_normal_sync         "#[fg=#6C7086,bg=#000000] {name} <> "
+                tab_active              "#[fg=#000000,bg=#ffffff,bold,italic] {name} #[fg=#ffffff,bg=#000000]"
+                tab_active_fullscreen   "#[fg=#9399B2,bg=#000000,bold,italic] {name} [] "
+                tab_active_sync         "#[fg=#9399B2,bg=#000000,bold,italic] {name} <> "
+
+                datetime          "#[fg=#white,bg=#9A348E,bold] {format} "
+                datetime_format   "%A, %b %d %Y %I:%M %p"
+                datetime_timezone "America/Vancouver"
+            }
         }
         children
-        pane size=2 borderless=true {
-            plugin location="zellij:status-bar"
-        }
-    }
-    tab_template name="strider_tab" {
         pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
-        }
-        pane split_direction="Vertical" {
-            pane size="20%" {
-                plugin location="zellij:strider"
-            }
-            children
-        }
-        pane size=2 borderless=true {
             plugin location="zellij:status-bar"
         }
     }
+    // tab_template name="strider_tab" {
+    //     pane size=1 borderless=true {
+    //         plugin location="zellij:tab-bar"
+    //     }
+    //     pane split_direction="Vertical" {
+    //         pane size="20%" {
+    //             plugin location="zellij:strider"
+    //         }
+    //         children
+    //     }
+    //     pane size=2 borderless=true {
+    //         plugin location="zellij:status-bar"
+    //     }
+    // }
     tab_template name="no_status_tab" {
+        // pane size=1 borderless=true {
+        //     plugin location="zellij:tab-bar"
+        // }
         pane size=1 borderless=true {
-            plugin location="zellij:tab-bar"
+            plugin location="file:/Users/mingjie.li/Downloads/zjstatus.wasm" {
+                format_left  "#[fg=#33658A,bg=#000000]#[fg=white,bg=#33658A,bold] ℤ #[fg=#33658A,bg=#000000]{tabs}"
+                format_right "#[fg=#000000,bg=#9A348E]{datetime}"
+                format_space ""
+
+                hide_frame_for_single_pane "true"
+
+                mode_normal  "#[bg=blue] "
+
+                tab_normal              "#[fg=#000000,bg=#4C4C59] {name} #[fg=#4C4C59,bg=#000000]"
+                tab_normal_fullscreen   "#[fg=#6C7086,bg=#000000] {name} [] "
+                tab_normal_sync         "#[fg=#6C7086,bg=#000000] {name} <> "
+                tab_active              "#[fg=#000000,bg=#ffffff,bold,italic] {name} #[fg=#ffffff,bg=#000000]"
+                tab_active_fullscreen   "#[fg=#9399B2,bg=#000000,bold,italic] {name} [] "
+                tab_active_sync         "#[fg=#9399B2,bg=#000000,bold,italic] {name} <> "
+
+                datetime          "#[fg=#white,bg=#9A348E,bold] {format} "
+                datetime_format   "%A, %b %d %Y %I:%M %p"
+                datetime_timezone "America/Vancouver"
+            }
         }
         children
     }

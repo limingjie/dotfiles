@@ -174,7 +174,7 @@ style = "bg:#DA627D bold"
 # command = "date +'%I∶%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/𝟠/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
 # command = "date +'%I⦂%M %p' | sed 's/0/𝟘/g; s/1/𝟙/g; s/2/𝟚/g; s/3/𝟛/g; s/4/𝟜/g; s/5/𝟝/g; s/6/𝟞/g; s/7/𝟟/g; s/8/⧖/g; s/9/𝟡/g; s/AM/𝔸𝕄/gi; s/PM/ℙ𝕄/gi' "
 # shell substitution is a bit faster than sed for this command.
-command = "echo ${${${${${${${${${${${${$(date +'%I⦂%M %p')//0/𝟘}//1/𝟙}//2/𝟚}//3/𝟛}//4/𝟜}//5/𝟝}//6/𝟞}//7/𝟟}//8/𝟠}//9/𝟡}//AM/𝔸𝕄}//PM/ℙ𝕄}"
+command = "echo ${${${${${${${${${${${${${${$(date +'%I⦂%M %p')//0/𝟘}//1/𝟙}//2/𝟚}//3/𝟛}//4/𝟜}//5/𝟝}//6/𝟞}//7/𝟟}//8/𝟠}//9/𝟡}//AM/𝔸𝕄}//PM/ℙ𝕄}//am/𝔸𝕄}//pm/ℙ𝕄}"
 format = '[ $symbol$output ]($style)'
 style = "bg:#9A348E bold"
 symbol = "🕙 "
