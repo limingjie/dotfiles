@@ -1,0 +1,263 @@
+{
+    "[arm]": {
+        "editor.autoIndent": "full",
+        "editor.detectIndentation": false,
+        "editor.tabSize": 8
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[java]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "other": "off",
+            "strings": "off"
+        },
+        "editor.wordWrap": "wordWrapColumn"
+    },
+    "[platformio-debug.asm]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 8
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "arduino.additionalUrls": [
+        "https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json",
+        "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
+    ],
+    "arduino.ignoreBoards": [
+        "WeMos D1"
+    ],
+    "arduino.useArduinoCli": true,
+    "C_Cpp.clang_format_style": "{     SortIncludes: Never, IndentPPDirectives: BeforeHash, AccessModifierOffset: -4,     AlignConsecutiveAssignments: Consecutive,     AlignConsecutiveDeclarations: Consecutive,     AlignTrailingComments: true,     AllowAllArgumentsOnNextLine: true,     AllowShortBlocksOnASingleLine: false,     AllowShortFunctionsOnASingleLine: false,     AllowShortIfStatementsOnASingleLine: false,     AllowShortLoopsOnASingleLine: false,     BasedOnStyle: Google,     BreakBeforeBraces: Allman,     BreakStringLiterals: false,     ColumnLimit: 120,     AlignConsecutiveMacros: true,     IndentWidth: 4 }",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+    "clang-format.executable": "/opt/homebrew/bin/clang-format",
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.language.java.style": "{BasedOnStyle: Chromium, IndentWidth: 4, ColumnLimit: 100, AlignArrayOfStructures: Left, AlignConsecutiveAssignments: Consecutive, AlignConsecutiveDeclarations: Consecutive, AlignTrailingComments: true}",
+    "code-runner.executorMap": {
+        "ahk": "autohotkey",
+        "applescript": "osascript",
+        "autoit": "autoit3",
+        "bat": "cmd /c",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "clojure": "lein exec",
+        "coffeescript": "coffee",
+        "cpp": "cd $dir && g++ -Wall --std=c++11 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "crystal": "crystal",
+        "csharp": "scriptcs",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "dart": "dart",
+        "fsharp": "fsi",
+        "go": "cd $dir && go run $fileName",
+        "groovy": "groovy",
+        "haskell": "runhaskell",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "javascript": "node",
+        "julia": "julia",
+        "kit": "kitc --run",
+        "lisp": "sbcl --script",
+        "lua": "lua",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "ocaml": "ocaml",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "perl": "perl",
+        "perl6": "perl6",
+        "php": "php",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "python": "python3 -u",
+        "r": "Rscript",
+        "racket": "racket",
+        "ruby": "ruby",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "sass": "sass --style expanded",
+        "scala": "scala",
+        "scheme": "csi -script",
+        "scss": "scss --style expanded",
+        "shellscript": "bash",
+        "swift": "swift",
+        "typescript": "ts-node",
+        "v": "v run",
+        "vbscript": "cscript //Nologo"
+    },
+    "code-runner.runInTerminal": true,
+    "color-highlight.markerType": "underline",
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "css",
+        "git-commit",
+        "git-rebase",
+        "go",
+        "go.mod",
+        "go.sum",
+        "gohtml",
+        "html",
+        "ignore",
+        "java",
+        "javascript",
+        "json",
+        "markdown",
+        "plaintext",
+        "python",
+        "rust",
+        "shellscript",
+        "sql",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "xml",
+        "yaml",
+        "yml"
+    ],
+    "cSpell.language": "en,en-US",
+    "cSpell.userWords": [
+        "Bilibili",
+        "everbridge",
+        "GPIOs",
+        "limingjie",
+        "microcontroller",
+        "mingjie"
+    ],
+    "debug.console.fontFamily": "'Iosevka Curly Custom', 'Iosevka Curly', 'Iosevka', 'Sarasa Mono SC', Monaco, Menlo, 'Courier New', monospace",
+    "debug.console.fontSize": 15,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeLensFontFamily": "'Iosevka Curly Custom', 'Iosevka Curly', 'Iosevka', 'Sarasa Mono SC', Monaco, Menlo, 'Courier New', monospace",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorSurroundingLines": 3,
+    "editor.find.globalFindClipboard": true,
+    // "editor.fontFamily": "'MONASPACE NEON', 'MONASPACE ARGON', 'MONASPACE XENON', 'MONASPACE RADON', 'MONASPACE KRYPTON', 'Sarasa Mono SC', Monaco, Menlo, 'Courier New', monospace",
+    // "editor.fontLigatures": true,
+    // "editor.fontLigatures": "'onum' on",
+    "editor.fontLigatures": "'onum' on, 'frac' on, 'cv01' 3, 'cv03' 1, 'cv04' 9, 'cv07' 7, 'cv10' 16, 'cv20' 11, 'cv23' 11, 'cv35' 14, 'cv56' 7, 'cv60' 14",
+    "editor.fontFamily": "'Iosevka Curly Custom', 'Iosevka Curly', 'Iosevka', 'Sarasa Mono SC', Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 15,
+    "editor.fontVariations": false,
+    "editor.fontWeight": "350",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.guides.bracketPairs": true,
+    "editor.maxTokenizationLineLength": 2000,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.showSlider": "always",
+    "editor.mouseWheelZoom": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        80,
+        100,
+        120,
+        150
+    ],
+    "editor.suggestSelection": "first",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.wordWrap": "off",
+    "editor.wordWrapColumn": 120,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "Makefile.*": "makefile",
+        "*.S": "platformio-debug.asm"
+    },
+    "files.autoGuessEncoding": true,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "always",
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers"
+    ],
+    "gitlens.currentLine.format": "${author, }${date}${' via 'pullRequest}${ • message|50?}",
+    "gitlens.hovers.currentLine.over": "line",
+    "go.formatTool": "goimports",
+    "go.gopath": "/Users/mingjie.li/go",
+    "go.lintOnSave": "package",
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "java.inlayHints.parameterNames.enabled": "none",
+    "jupyter.askForKernelRestart": false,
+    "lldb.suppressUpdateNotifications": true,
+    "markdown-pdf.executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "markdown-preview-enhanced.liveUpdate": true,
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    "python.formatting.provider": "autopep8",
+    "redhat.telemetry.enabled": false,
+    "search.actionsPosition": "auto",
+    "search.showLineNumbers": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.fontFamily": "'Iosevka Term Curly Custom', 'Iosevka Curly Custom', 'Iosevka Curly', 'Iosevka', 'Sarasa Mono SC', Monaco, Menlo, 'Courier New', monospace",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.scrollback": 99999,
+    "trailing-spaces.deleteModifiedLinesOnly": true,
+    "trailing-spaces.trimOnSave": true,
+    "window.commandCenter": true,
+    "window.restoreWindows": "all",
+    "workbench.colorTheme": "Monokai",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.fontAliasing": "auto",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.productIconTheme": "macos-modern",
+    "workbench.startupEditor": "none",
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.view.alwaysShowHeaderActions": true,
+    "diffEditor.maxComputationTime": 0,
+    "workbench.editor.empty.hint": "hidden"
+}
