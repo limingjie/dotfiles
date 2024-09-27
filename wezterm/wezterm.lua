@@ -18,8 +18,14 @@ config.font = wezterm.font {
 config.font_size = 16
 
 -- Window
-config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.8
+config.window_decorations = 'RESIZE'
+config.window_background_opacity = 0.9
+config.window_background_image = wezterm.config_dir .. '/wallpapers/5cm_launch.jpg'
+config.window_background_image_hsb = {
+    brightness = 0.1,
+    hue = 1.0,
+    saturation = 1.0
+}
 
 -- Tab
 config.hide_tab_bar_if_only_one_tab = true
