@@ -6,16 +6,17 @@ local config = wezterm.config_builder()
 
 -- Font
 -- Wezterm embeds the Nerd Font symbols by default.
+config.font_size = 16
 config.font = wezterm.font {
     family = 'Iosevka Curly',
     weight = 'Light',
-    harfbuzz_features = {'kern', 'liga', 'clig', -- default values
-    'onum', -- enable old-style number
-    'frac', -- enable fractions
-    'cv01=3', 'cv03=1', 'cv04=9', 'cv07=7', 'cv10=16', 'cv20=11', 'cv23=11', 'cv35=14', 'cv56=7', 'cv60=14'}
+    harfbuzz_features = {
+        'kern', 'liga', 'clig', -- default values
+        'onum',                 -- enable old-style number
+        'frac',                 -- enable fractions
+        'cv01=3', 'cv03=1', 'cv04=9', 'cv07=7', 'cv10=16', 'cv20=11', 'cv23=11', 'cv35=14', 'cv56=7', 'cv60=14'
+    }
 }
-
-config.font_size = 16
 
 -- Window
 config.window_decorations = 'RESIZE'
