@@ -4,9 +4,8 @@ local wezterm = require 'wezterm'
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
-
--- Font configuration, Nerd Font symbols are automatically supported by Wezterm
+-- Font
+-- Wezterm embeds the Nerd Font symbols by default.
 config.font = wezterm.font {
     family = 'Iosevka Curly',
     weight = 'Light',
@@ -18,12 +17,14 @@ config.font = wezterm.font {
 
 config.font_size = 16
 
+-- Window
+config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.8
 
 -- Tab
 config.hide_tab_bar_if_only_one_tab = true
 
--- For example, changing the color scheme:
+-- Theme
 config.color_scheme = 'Tomorrow Night Bright'
 
 -- and finally, return the configuration to wezterm
