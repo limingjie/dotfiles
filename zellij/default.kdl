@@ -74,13 +74,14 @@ layout {
                 command "zsh"
                 args "-c" "if (( $+commands[fortune] )) && (( $+commands[lolcat] )); then while true; do clear; fortune -l | lolcat; sleep 10; done; fi"
             }
-            pane split_direction="horizontal" size=64 {
-                pane command="cmatrix" borderless=true {
-                    args "-b"
+            pane split_direction="horizontal" size=35 {
+                pane borderless=true {
+                    command "zsh"
+                    args "-c" "clear; sleep 1; /usr/local/bin/cmatrix -bcC blue"
                 }
                 pane size=7 borderless=true {
                     command "zsh"
-                    args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; sleep 2; done"
+                    args "-c" "while true; do clear; figlet -cw 36 'Mingjie' | lolcat; read -t 0.5; done"
                 }
             }
         }
