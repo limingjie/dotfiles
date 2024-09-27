@@ -79,6 +79,8 @@ if (( $+commands[eza] )); then
     alias ll='eza --all --all --binary --classify --color-scale --group --long --sort=Filename --icons'
     alias llg='eza --all --all --binary --classify --color-scale --grid --group --long --sort=Filename --icons'
     alias la='eza --all --all --classify --sort=Filename --icons'
+    # Bright `-` in dark theme
+    export EXA_COLORS="xx=37"
 fi
 
 # bat
