@@ -20,12 +20,22 @@ config.font = wezterm.font {
 
 -- Window
 config.window_decorations = 'RESIZE'
-config.window_background_opacity = 0.9
-config.window_background_image = wezterm.config_dir .. '/wallpapers/5cm_launch.jpg'
-config.window_background_image_hsb = {
-    brightness = 0.1,
-    hue = 1.0,
-    saturation = 1.0
+
+-- Background
+config.background = {
+    {
+        source = {
+            File = wezterm.config_dir .. '/wallpapers/5cm_launch.jpg'
+        },
+        horizontal_align = "Center",
+        vertical_align = "Middle",
+        opacity = 0.9,
+        hsb = {
+            brightness = 0.1,
+            hue = 1.0,
+            saturation = 1.0
+        }
+    }
 }
 
 -- Tab
