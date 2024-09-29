@@ -77,7 +77,7 @@ layout {
             pane split_direction="horizontal" size=35 {
                 pane borderless=true {
                     command "zsh"
-                    args "-c" "clear; sleep 1; /usr/local/bin/cmatrix -bcC blue"
+                    args "-c" "cmatrix -bC blue"
                 }
                 pane size=7 borderless=true {
                     command "zsh"
