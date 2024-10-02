@@ -46,6 +46,7 @@ relink      ${dotfilesroot}/kitty/theme.conf               ~/.config/kitty/theme
 relink      ${dotfilesroot}/nvim/init.vim                  ~/.config/nvim/init.vim
 relink      ${dotfilesroot}/starship/starship.toml         ~/.config/starship.toml
 relink      ${dotfilesroot}/wezterm/wezterm.lua            ~/.config/wezterm/wezterm.lua
+relink      ${dotfilesroot}/wezterm/wallpapers             ~/.config/wezterm/wallpapers
 relink      ${dotfilesroot}/zellij/default.kdl             ~/.config/zellij/layouts/default.kdl
 relink      ${dotfilesroot}/zellij/plugins/zjstatus.wasm   ~/.config/zellij/plugins/zjstatus.wasm
 relink      ${dotfilesroot}/zsh/zshrc                      ~/.config/zsh/.zshrc
