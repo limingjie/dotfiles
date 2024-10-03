@@ -17,6 +17,7 @@ config.font = wezterm.font {
         'cv01=3', 'cv03=1', 'cv04=9', 'cv07=7', 'cv10=16', 'cv20=11', 'cv23=11', 'cv35=14', 'cv56=7', 'cv60=14'
     }
 }
+config.freetype_load_target = "Light"
 
 -- Window
 config.window_decorations = 'RESIZE'
@@ -25,11 +26,11 @@ config.window_decorations = 'RESIZE'
 config.background = {
     {
         source = {
-            File = wezterm.config_dir .. '/wallpapers/5cm_launch.jpg'
+            File = wezterm.config_dir .. '/wallpapers/5cm_morning.jpg',
         },
         horizontal_align = "Center",
         vertical_align = "Middle",
-        opacity = 0.9,
+        opacity = 0.96,
         hsb = {
             brightness = 0.1,
             hue = 1.0,
