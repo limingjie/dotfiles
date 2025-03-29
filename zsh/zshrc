@@ -108,6 +108,7 @@ fi
 if (( $+commands[yt-dlp] )); then
     alias yt='noglob yt-dlp --embed-thumbnail --embed-metadata -N 5 -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
     alias yt720='noglob yt-dlp --embed-thumbnail --embed-metadata -N 5 -f "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4] / bv*+ba/b"'
+    alias yt720sub='noglob yt-dlp --embed-thumbnail --embed-metadata -N 5 -f "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4] / bv*+ba/b" --write-subs --sub-langs "zh-Hans.*" --write-auto-subs --sub-format "srt" --embed-subs'
     alias yta='noglob yt-dlp --embed-thumbnail --embed-metadata -f "ba[ext=m4a]/ba"'
 fi
 
@@ -134,4 +135,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Cargo's bin directory ($HOME/.cargo/bin)
 path=($HOME/.cargo/bin $path)
 
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:/usr/local/opt/ruby/bin:$PATH"
