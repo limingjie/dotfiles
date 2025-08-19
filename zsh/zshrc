@@ -113,20 +113,22 @@ if (( $+commands[yt-dlp] )); then
 fi
 
 # alias for proxy
-alias proxy='export http_proxy=http://127.0.0.1:4780;export https_proxy=http://127.0.0.1:4780;'
+# alias proxy='export http_proxy=http://127.0.0.1:4780;export https_proxy=http://127.0.0.1:4780;'
 
+path+=('/usr/local/sbin')                              # sbin
 path+=('/usr/local/texlive/2021/bin')                  # Tex
 path+=('/Users/mingjie/development/flutter/bin')       # Flutter
-path+=('/usr/local/sbin')                              # sbin
 
-if [[ $(uname -m) == 'arm64' ]]; then
-    path+=('/opt/homebrew/opt/binutils/bin')           # binutils on macOS arm64
+if [[ $(uname -m) == 'arm64' ]]; then                  # macOS arm64
+    path+=('/opt/homebrew/opt/binutils/bin')           # binutils
     path+=('/opt/homebrew/opt/openjdk/bin')            # OpenJDK
-else
-    path+=('/usr/local/opt/binutils/bin')              # binutils on macOS x86_64
+    path+=('/opt/homebrew/opt/ruby/bin')               # Ruby
+else                                                   # macOS x86_64
+    path+=('/usr/local/opt/binutils/bin')              # binutils
+    path+=('/usr/local/opt/ruby/bin')                  # Ruby
 fi
 
-# Use the command in `brew info java` to make the system find the JDK.
+# Use the command in `brew info java` to locate the JDK.
 # For the system Java wrappers to find this JDK, symlink it with
 # sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -134,5 +136,3 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # rust
 # Cargo's bin directory ($HOME/.cargo/bin)
 path=($HOME/.cargo/bin $path)
-
-export PATH="/opt/homebrew/opt/openjdk/bin:/usr/local/opt/ruby/bin:$PATH"
