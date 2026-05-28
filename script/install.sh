@@ -41,6 +41,8 @@ else
 fi
 
 relink      ${dotfilesroot}/alacritty/alacritty.yml        ~/.config/alacritty.yml
+relink      ${dotfilesroot}/ghostty/config.ghostty         ~/.config/ghostty/config.ghostty
+relink      ${dotfilesroot}/ghostty/gruvbox-dark-hard.icns ~/.config/ghostty/gruvbox-dark-hard.icns
 relink      ${dotfilesroot}/kitty/kitty.conf               ~/.config/kitty/kitty.conf
 relink      ${dotfilesroot}/kitty/theme.conf               ~/.config/kitty/theme.conf
 relink      ${dotfilesroot}/nvim/init.vim                  ~/.config/nvim/init.vim

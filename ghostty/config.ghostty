@@ -1,0 +1,43 @@
+# Font
+
+font-family = "Iosevka Term Curly"
+font-style = "ExtraLight"
+font-family-bold = "Iosevka Term Curly"
+font-style-bold = "Regular"
+font-family-italic = "Iosevka Term Curly"
+font-style-italic = "ExtraLight Italic"
+font-family-bold-italic = "Iosevka Term Curly"
+font-style-bold-italic = "Italic"
+font-size = 17.0
+font-feature = "+onum,+frac,cv01=3,cv03=1,cv04=9,cv07=7,cv10=16,cv20=11,cv23=11,cv35=14,cv56=7,cv60=14"
+font-codepoint-map = "U+E0A0-U+E0A3,U+E0C0-U+E0C7=Iosevka Nerd Font Mono Light"
+adjust-cell-height = 5
+
+# Colors
+
+background = #000000
+
+# Background
+
+# background-opacity = 0.9
+background-image = ../wallpapers/5cm_launch.jpg
+background-image-fit = stretch
+background-image-position = center
+background-image-repeat = false
+background-image-opacity = 0.2
+
+# Title Bar and Tab Bar
+
+macos-icon = custom
+macos-custom-icon = ~/.config/ghostty/gruvbox-dark-hard.icns
+window-decoration = auto
+macos-titlebar-style = tabs
+gtk-titlebar-style = tabs
+
+# Behavior
+
+copy-on-select = clipboard
+confirm-close-surface = false
+quit-after-last-window-closed = true
+macos-option-as-alt = true
+term = xterm-256color
